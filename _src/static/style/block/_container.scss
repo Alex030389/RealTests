@@ -1,0 +1,44 @@
+.container {
+	position: relative;
+
+	width: 100%;
+	max-width: 1470px;
+	margin: 0 auto;
+	padding: 0 15px;
+	// @media (max-width: 1200px) {
+	// 	max-width: 960px;
+	// }
+
+	// @media (max-width: 992px) {
+	// 	max-width: 720px;
+	// }
+
+	// @media (max-width: 768px) {
+	// 	max-width: 540px;
+	// }
+
+	&._wide {
+		max-width: 1862px;
+	}
+
+	&._who-chooses {
+		max-width: 1200px;
+		padding-top: 44px;
+		padding-bottom: 32px;
+
+		@media (max-width: $sm) {
+			padding-top: 30px;
+			padding-bottom: 25px;
+		}
+	}
+
+	&._testimonials {
+		padding-top: 53px;
+		padding-bottom: 48px;
+
+		@media (max-width: $sm) {
+			padding-top: 30px;
+			padding-bottom: 44px;
+		}
+	}
+}

@@ -1,0 +1,111 @@
+.agitation {
+	width: 100%;
+	// height: 509px;
+	&__slider {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+	}
+
+	.slick-list,
+	.slick-track {
+		height: 100%;
+	}
+
+	&__slider-item {
+		width: 100%;
+		&._1 {
+			background: url(../img/ui/agitation-slider/1.jpg);
+			background-size: cover;
+		}
+		&._2 {
+			background: url(../img/ui/agitation-slider/2.jpg);
+			background-size: cover;
+		}
+		&._3 {
+			background: url(../img/ui/agitation-slider/3.jpg);
+			background-size: cover;
+		}
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 72px;
+		padding-bottom: 72px;
+
+		text-align: center;
+
+		@media (max-width: $sm) {
+			padding-top: 25px;
+			padding-bottom: 44px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 42px;
+
+		font-size: 52px;
+		line-height: 1.3;
+		color: #fff;
+		font-style: 400;
+
+		@media (max-width: $sm) {
+			margin-bottom: 13px;
+			padding: 0 5px;
+
+			font-size: 24px;
+		}
+	}
+
+	&__desc {
+		margin-bottom: 48px;
+
+		font-size: 28px;
+		line-height: 1.4;
+		color: #fff;
+
+		@media (max-width: $sm) {
+			margin-bottom: 21px;
+
+			font-size: 18px;
+		}
+	}
+
+	&__search {
+		width: 100%;
+		max-width: 730px;
+		margin-bottom: 44px;
+
+		@media (max-width: $sm) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__box-btn {
+		display: flex;
+
+		@media (max-width: $ssm) {
+			flex-direction: column;
+		}
+	}
+
+	&__btn {
+		&:not(:last-child) {
+			margin-right: 30px;
+
+			@media (max-width: $sm) {
+				margin-right: 8px;
+			}
+
+			@media (max-width: $ssm) {
+				margin-right: 0;
+				margin-bottom: 16px;
+			}
+		}
+	}
+}

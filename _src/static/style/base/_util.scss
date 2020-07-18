@@ -1,0 +1,53 @@
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+
+	white-space: nowrap;
+
+	border: 0;
+
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+}
+
+.overflow-ellipsis {
+	width: 100%;
+	overflow: hidden;
+
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+}
+
+.btn-reset {
+	display: inline-block;
+	padding: 0;
+
+	vertical-align: top;
+	white-space: nowrap;
+
+	background-color: transparent;
+	border: none;
+}
+
+.link-reset {
+	display: inline-block;
+
+	vertical-align: top;
+	color: inherit;
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+}

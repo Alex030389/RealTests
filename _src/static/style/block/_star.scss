@@ -1,0 +1,15 @@
+.star {
+	display: flex;
+	align-items: center;
+	img {
+		flex-shrink: 0;
+		width: 24px;
+
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+		@media (max-width: $sm) {
+			width: 20px;
+		}
+	}
+}

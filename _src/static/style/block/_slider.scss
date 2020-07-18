@@ -1,0 +1,55 @@
+.slider {
+	margin: 0 -10px;
+
+	&._pt_20 {
+		padding-top: 20px;
+
+		@media (max-width: $sm) {
+			margin-top: -5px;
+			padding-top: 0;
+		}
+	}
+
+	&__item {
+		max-width: 487px;
+		padding: 10px;
+
+		@media (max-width: $sm) {
+			width: 100%;
+			max-width: 550px;
+		}
+	}
+
+	.slick-list {
+		padding-bottom: 21px;
+
+		@media (max-width: $sm) {
+			padding-bottom: 15px;
+		}
+	}
+
+	.slick-dots {
+		@extend .list-reset;
+
+		display: flex;
+		justify-content: center;
+		li {
+			padding: 0 8px;
+		}
+
+		button {
+			display: block;
+			width: 12px;
+			height: 12px;
+
+			font-size: 0;
+
+			background: #f2f2f3;
+			border: none;
+			border-radius: 50%;
+		}
+		.slick-active button {
+			background-color: #1273eb;
+		}
+	}
+}

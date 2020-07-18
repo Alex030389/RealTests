@@ -1,0 +1,68 @@
+.costumer {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, .08);
+
+	&__header {
+		display: flex;
+		align-items: center;
+		padding: 17px 28px;
+
+		border-bottom: 1px solid #f2f2f3;
+
+		@media (max-width: $sm) {
+			padding: 16px;
+		}
+	}
+
+	&__wrap-img {
+		flex-shrink: 0;
+		width: 60px;
+		margin-right: 24px;
+		overflow: hidden;
+
+		border-radius: 12px;
+
+		@media (max-width: $sm) {
+			width: 40px;
+		}
+	}
+
+	&__box-name-star {
+		display: flex;
+		width: 100%;
+
+		@media (max-width: 370px) {
+			flex-direction: column;
+		}
+	}
+
+	&__name {
+		margin-right: 10px;
+
+		font-weight: 700;
+		font-size: 24px;
+
+		@media (max-width: $sm) {
+			font-size: 16px;
+		}
+	}
+
+	&__star {
+		margin-left: auto;
+		@media (max-width: 370px) {
+			// order: -1;
+			margin-left: 0;
+		}
+	}
+
+	&__body {
+		padding: 16px 28px 24px;
+
+		@media (max-width: $sm) {
+			padding: 12px 16px 20px;
+
+			font-size: 14px;
+		}
+	}
+}

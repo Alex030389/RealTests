@@ -1,0 +1,20 @@
+.title {
+	font-size: 44px;
+	line-height: 1.27;
+	color: #0d0c22;
+	&._ta_center {
+		text-align: center;
+	}
+	&._mb_20 {
+		margin-bottom: 20px;
+
+		@media (max-width: $sm) {
+			// margin-bottom: 16px;
+			margin-bottom: 10px;
+		}
+	}
+
+	@media (max-width: $sm) {
+		font-size: 24px;
+	}
+}

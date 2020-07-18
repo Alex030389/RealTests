@@ -1,0 +1,13 @@
+.subtitle {
+	max-width: 755px;
+	margin-right: auto;
+	margin-left: auto;
+
+	font-size: 18px;
+	text-align: center;
+
+
+	@media (max-width: $sm) {
+		font-size: 14px;
+	}
+}

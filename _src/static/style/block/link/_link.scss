@@ -1,0 +1,23 @@
+.link {
+	display: inline-block;
+	padding: 0;
+
+	font-size: 18px;
+	line-height: 1;
+	vertical-align: top;
+	color: #293741;
+	text-decoration: none;
+
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(41, 55, 65, .4);
+
+	transition: .3s;
+
+	&:hover {
+		color: #1273eb;
+		text-decoration: none;
+
+		border-bottom-color: transparent;
+	}
+}

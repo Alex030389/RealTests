@@ -1,0 +1,31 @@
+.search {
+	position: relative;
+	&__input {
+		padding-right: 80px;
+	}
+
+	&__btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		width: 62px;
+		height: 100%;
+
+		@media (max-width: $sm) {
+			width: 48px;
+		}
+	}
+
+	&__icon {
+		width: 24px;
+		height: 24px;
+
+		fill: #fff;
+
+		@media (max-width: $sm) {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
