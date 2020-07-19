@@ -19,7 +19,7 @@ $('[data-slider="1"]').slick({
 	dots: true,
 	infinite: true,
 	accessibility: false,
-
+	touchThreshold: 10,
 	responsive: [
 		{
 			breakpoint: 1200,
