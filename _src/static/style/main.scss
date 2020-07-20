@@ -25,15 +25,21 @@
 @import "block/s";
 @import "block/tab";
 @import "block/who-choose";
-@import "block/slider";
+@import "block/slider/slider";
 @import "block/costumer";
 @import "block/star";
-
+@import "block/breadcrum";
+@import "block/box-style";
+@import "block/exam-slide";
+@import "block/all-vendors";
+@import "block/testimonials";
+@import "block/button/btn-box";
 
 
 @import "block/footer/footer";
 @import "block/modal/modal";
 
-// button:hover {
-// 	cursor: url(../img/cursor.png) 8 0, pointer;
-// }
+button:hover,
+a:hover {
+	cursor: url(../img/cursor.png) 8 0, pointer;
+}

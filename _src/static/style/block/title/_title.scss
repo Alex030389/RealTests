@@ -2,14 +2,22 @@
 	font-size: 44px;
 	line-height: 1.27;
 	color: #0d0c22;
+
+	&._fz_36 {
+		font-size: 36px;
+
+		@media (max-width: $sm) {
+			font-size: 24px;
+		}
+	}
+
 	&._ta_center {
 		text-align: center;
 	}
-	&._mb_20 {
+	&._mb_2 {
 		margin-bottom: 20px;
 
 		@media (max-width: $sm) {
-			// margin-bottom: 16px;
 			margin-bottom: 10px;
 		}
 	}

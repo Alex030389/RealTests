@@ -1,7 +1,23 @@
 .slider {
 	margin: 0 -10px;
 
-	&._pt_20 {
+	&._m-sm-4 {
+		@media (max-width: $sm) {
+			margin-right: -4px;
+			margin-left: -4px;
+		}
+	}
+
+	&._pt_1 {
+		padding-top: 10px;
+
+		@media (max-width: $sm) {
+			margin-top: -5px;
+			padding-top: 0;
+		}
+	}
+
+	&._pt_2 {
 		padding-top: 20px;
 
 		@media (max-width: $sm) {
@@ -11,12 +27,22 @@
 	}
 
 	&__item {
-		max-width: 487px;
 		padding: 10px;
 
-		@media (max-width: $sm) {
-			width: 100%;
-			max-width: 550px;
+		&._mw_487 {
+			max-width: 487px;
+
+			@media (max-width: $sm) {
+				width: 100%;
+				max-width: 550px;
+			}
+		}
+
+		&._p-sm-4 {
+			@media (max-width: $sm) {
+				padding-right: 4px;
+				padding-left: 4px;
+			}
 		}
 	}
 

@@ -41,4 +41,24 @@
 			padding-bottom: 44px;
 		}
 	}
+
+	&._pt_3 {
+		padding-top: 35px;
+	}
+
+	&._pb_3 {
+		padding-bottom: 30px;
+
+		@media (max-width: $sm) {
+			padding-bottom: 15px;
+		}
+	}
+
+	&._pb_6 {
+		padding-bottom: 60px;
+
+		@media (max-width: $sm) {
+			padding-bottom: 40px;
+		}
+	}
 }
