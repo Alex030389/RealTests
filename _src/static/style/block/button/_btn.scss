@@ -49,6 +49,16 @@
 	}
 
 	//////////////////////////////////////////// btn size
+	&._size_180_48 {
+		min-width: 180px;
+		height: 48px;
+		padding: 10px 24px;
+
+		@media (max-width: $sm) {
+			padding: 10px;
+		}
+	}
+
 	&._size_200x60 {
 		min-width: 200px;
 		height: 62px;

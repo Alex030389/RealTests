@@ -57,22 +57,25 @@
 	}
 
 	&__content-list {
-		max-width: 1050px;
 		padding-top: 49px;
 		padding-bottom: 18px;
 
 		@media (max-width: $sm) {
 			padding-top: 25px;
-			padding-right: 0;
 			padding-bottom: 8px;
-			padding-left: 0;
 		}
 	}
 
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
-		// margin: 0 -15px;
+		max-width: 1050px;
+		margin: 0 auto;
+
+		@media (max-width: $sm) {
+			margin-right: -15px;
+			margin-left: -15px;
+		}
 	}
 
 	&__col {
@@ -88,6 +91,8 @@
 
 		@media (max-width: $sm) {
 			width: $col-2;
+			padding-right: 20px;
+			padding-left: 20px;
 		}
 	}
 

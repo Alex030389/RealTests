@@ -1,0 +1,102 @@
+.cert-exam {
+	@extend .list-reset;
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+	padding-top: 9px;
+
+	&__item {
+		width: $col-4;
+		padding: 0 10px 20px;
+
+		@media (max-width: $xl) {
+			width: $col-3;
+		}
+
+		@media (max-width: $lg) {
+			width: $col-2;
+		}
+
+		@media (max-width: $sm) {
+			width: $col-1;
+			padding-bottom: 8px;
+		}
+	}
+
+	&__card {
+		padding: 22px 32px 32px;
+
+		background: #f4f4f4;
+		border-radius: 8px;
+
+		@media (max-width: $sm) {
+			padding: 20px 20px 22px;
+		}
+	}
+
+	&__num {
+		margin-bottom: 13px;
+	}
+
+	&__name {
+		margin-bottom: 20px;
+	}
+
+	&__form {
+	}
+
+	&__box-radio-label {
+		margin-bottom: 14px;
+	}
+
+	&__radio {
+	}
+
+	&__label {
+		position: relative;
+
+		padding-left: 28px;
+
+		font-weight: 700;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 2px;
+			left: 0;
+
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+
+			border: 1px solid #0d7acf;
+			border-radius: 50%;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 6px;
+			left: 4px;
+
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+
+			background-color: #0d7acf;
+			border-radius: 50%;
+			opacity: 0;
+
+			transition: .3s;
+		}
+	}
+
+	&__btn {
+		font-size: 16px;
+	}
+}
+
+.cert-exam__radio:checked + .cert-exam__label::after {
+	opacity: 1;
+}
