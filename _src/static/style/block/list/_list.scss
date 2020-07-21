@@ -1,3 +1,31 @@
 .list {
 	@extend .list-reset;
+
+	&__item {
+		position: relative;
+
+		display: block;
+		margin-bottom: 10px;
+		padding-left: 13px;
+
+		line-height: 1.22;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 9px;
+			left: 0;
+
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+
+			background-color: #1273eb;
+			border-radius: 50%;
+
+			@media (max-width: $sm) {
+				top: 6px;
+			}
+		}
+	}
 }
