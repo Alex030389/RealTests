@@ -5,6 +5,10 @@
 		padding-top: 13px;
 	}
 
+	&._pt_sm {
+		padding-top: 10px;
+	}
+
 	&__wrap-btn-list {
 		display: flex;
 		justify-content: center;
@@ -59,10 +63,19 @@
 	&__content-list {
 		padding-top: 49px;
 		padding-bottom: 18px;
+		overflow-x: hidden;
 
 		@media (max-width: $sm) {
 			padding-top: 25px;
 			padding-bottom: 8px;
+		}
+
+		&._pb_lg {
+			padding-bottom: 35px;
+
+			@media (max-width: $sm) {
+				padding-bottom: 15px;
+			}
 		}
 	}
 

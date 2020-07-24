@@ -2,12 +2,20 @@
 	position: relative;
 
 	width: 100%;
-	max-width: 1470px;
+	max-width: 1500px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding-right: 30px;
+	padding-left: 30px;
+
+	@media (max-width: $xl) {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
 
 	&._wide {
 		max-width: 1862px;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 
 	&._who-chooses {
