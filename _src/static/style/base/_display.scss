@@ -2,12 +2,32 @@
 	display: none;
 }
 
+@media (max-width: $lg) {
+	.d-lg-block {
+		display: block;
+	}
+
+	.d-lg-none {
+		display: none;
+	}
+}
+
 @media (max-width: $md) {
 	.d-md-block {
 		display: block;
 	}
 
 	.d-md-none {
+		display: none;
+	}
+}
+
+@media (max-width: $sm) {
+	.d-sm-block {
+		display: block;
+	}
+
+	.d-sm-none {
 		display: none;
 	}
 }

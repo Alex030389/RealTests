@@ -1,7 +1,11 @@
 .s {
 	position: relative;
 
-	&._lite-gray {
+	&._gray {
 		background-color: #f4f4f4;
+	}
+
+	&._lite-gray {
+		background-color: #f9f9f9;
 	}
 }

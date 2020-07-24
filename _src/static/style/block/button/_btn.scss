@@ -55,6 +55,7 @@
 		padding: 10px 24px;
 
 		@media (max-width: $sm) {
+			min-width: auto;
 			padding: 10px;
 		}
 	}
