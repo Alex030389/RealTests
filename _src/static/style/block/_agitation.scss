@@ -18,16 +18,25 @@
 	&__slider-item {
 		width: 100%;
 		&._1 {
-			background: url(../img/ui/agitation-slider/1.jpg);
+			background: url(../img/ui/agitation-slider/1.jpg) center center no-repeat;
 			background-size: cover;
+			@media (max-width: $sm) {
+				background-image: url(../img/ui/agitation-slider/1m.jpg);
+			}
 		}
 		&._2 {
-			background: url(../img/ui/agitation-slider/2.jpg);
+			background: url(../img/ui/agitation-slider/2.jpg) center center no-repeat;
 			background-size: cover;
+			@media (max-width: $sm) {
+				background-image: url(../img/ui/agitation-slider/2m.jpg);
+			}
 		}
 		&._3 {
-			background: url(../img/ui/agitation-slider/3.jpg);
+			background: url(../img/ui/agitation-slider/3.jpg) center center no-repeat;
 			background-size: cover;
+			@media (max-width: $sm) {
+				background-image: url(../img/ui/agitation-slider/3m.jpg);
+			}
 		}
 	}
 
