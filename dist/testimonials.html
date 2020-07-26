@@ -18,7 +18,7 @@
 <header class="header">
 	<div class="container _wide">
 		<div class="header__box-m-btn">
-			<button class="header__m-btn btn-reset" aria-label="open mobile menu">
+			<button class="header__m-btn btn-reset" data-m-btn="open" aria-label="open mobile menu">
 				<svg class="header__icon" aria-hidden="true">
 					<use xlink:href="static/img/symbol/sprite.svg#hamburger"></use>
 				</svg>
@@ -32,12 +32,12 @@
 		<a class="header__logo logo" href="#">
 			<img src="static/img/logo/logo.png" alt="logo">
 		</a>
-		<nav class="header__main-nav main-nav">
+		<nav class="header__main-nav main-nav" data-nav="main">
 			<ul class="main-nav__list">
 				<li class="main-nav__item _dropdown">
 					<a class="main-nav__link" href="#">
 						<span>Products</span>
-						<svg class="main-nav__arrow" aria-hidden="true">
+						<svg class="main-nav__arrow arrow-dropdown" aria-hidden="true">
 							<use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
 						</svg>	
 					</a>
@@ -148,6 +148,95 @@
 			</a>
 		</div><!--/header__box-m-btn-->
 	</div><!--/container-->
+
+	<!-- mobile nav -->
+	<nav class="header__main-m-nav main-m-nav" data-nav="main-m-nav">
+		<div class="main-m-nav__inner" data-nav="m-nav-inner">
+			<button class="main-m-nav__btn-close btn-close btn-reset" data-m-btn="close">
+				<svg aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<ul class="main-m-nav__list" data-nav="main-m-list">
+				<li class="main-m-nav__item _dropdown" >
+					<a class="main-m-nav__link" href="#">
+						<span>Products</span>
+						<svg class="main-m-nav__arrow arrow-dropdown" aria-hidden="true">
+							<use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
+						</svg>	
+					</a>
+					<ul class="main-m-nav__sub-nav sub-m-nav">
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+					</ul>				
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Samples</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Guarantee</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Testimonials</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Power Packs</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Partners</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Contact Us</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">About Us</a>					
+				</li>
+			</ul>
+		</div>
+	</nav>
 </header>
 
 
@@ -365,7 +454,7 @@
 			</li>
 		</ul>
 		<div class="btn-box _jc-center">
-			<button class="btn-reset btn _border-primary _size_212x60">Load More</button>
+			<button class="btn-reset btn _border-primary _h_lg _mw_lg">Load More</button>
 		</div>
 	</section><!--/container-->
 </main>

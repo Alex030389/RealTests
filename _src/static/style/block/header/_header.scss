@@ -65,4 +65,25 @@
 			margin-right: 20px;
 		}
 	}
+
+	&__main-m-nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+
+		display: none;
+
+		transform: translateX(-3000px);
+
+		transition: .3s;
+
+		@media (max-width: 1350px) {
+			display: block;
+		}
+
+		&._open {
+			transform: translateX(0);
+		}
+	}
 }

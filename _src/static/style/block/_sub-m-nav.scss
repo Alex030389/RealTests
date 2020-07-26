@@ -1,0 +1,13 @@
+.sub-m-nav {
+	@extend .list-reset;
+
+	padding-top: 12px;
+	padding-left: 10px;
+
+	&__item {
+		margin-bottom: 10px;
+	}
+
+	&__link {
+	}
+}

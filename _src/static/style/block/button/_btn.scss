@@ -49,37 +49,23 @@
 	}
 
 	//////////////////////////////////////////// btn size
-	&._size_180_48 {
-		min-width: 180px;
+	// height
+	&._h_lg {
+		height: 62px;
+		padding: 10px;
+
+		@media (max-width: $sm) {
+			height: 48px;
+		}
+	}
+
+	&._h_md {
 		height: 48px;
-		padding: 10px 24px;
-
-		@media (max-width: $sm) {
-			min-width: auto;
-			padding: 10px;
-		}
+		padding: 10px;
 	}
 
-	&._size_200x60 {
-		min-width: 200px;
-		height: 62px;
-		padding: 10px 24px;
-
-		@media (max-width: $sm) {
-			min-width: 156px;
-			height: 48px;
-			padding: 10px;
-		}
-	}
-
-	&._size_212x60 {
+	// width
+	&._mw_lg {
 		min-width: 212px;
-		height: 62px;
-		padding: 10px 24px;
-
-		@media (max-width: $sm) {
-			height: 48px;
-			padding: 10px;
-		}
 	}
 }
