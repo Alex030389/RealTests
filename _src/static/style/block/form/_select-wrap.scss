@@ -1,0 +1,28 @@
+.select-wrap {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		z-index: 100;
+
+		display: block;
+		width: 20px;
+		height: 20px;
+
+		background: url(../img/icon/arrow.svg) center center no-repeat;
+		background-size: 100% 100%;
+		transform: translateY(-50%);
+
+		pointer-events: none;
+
+		@media (max-width: $sm) {
+			right: 16px;
+
+			width: 16px;
+			height: 16px;
+		}
+	}
+}

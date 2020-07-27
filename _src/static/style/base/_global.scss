@@ -72,15 +72,15 @@ img {
 	display: none;
 }
 
-// select {
-// 	-webkit-appearance: none;
-// 	   -moz-appearance: none;
-// 	        appearance: none;
-// }
+select {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+}
 
-// select::-ms-expand {
-// 	display: none;
-// }
+select::-ms-expand {
+	display: none;
+}
 
 // input auto-complete change color
 :-webkit-autofill {

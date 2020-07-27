@@ -1,6 +1,19 @@
 .exam {
 	display: flex;
 
+	&._fd_column {
+		flex-direction: column;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: center;
+
+		@media (max-width: $sm) {
+			margin-bottom: -15px;
+		}
+	}
+
 	&__box-img-btn {
 		flex-shrink: 0;
 		width: 212px;
@@ -38,8 +51,6 @@
 
 	&__title {
 		margin-bottom: 16px;
-
-		// text-align: center;
 	}
 
 	&__p {
@@ -56,8 +67,20 @@
 	}
 
 	&__list {
-		padding-top: 27px;
+		padding-top: 12px;
 
 		color: #6e6d7a;
+
+		&._pt_lg {
+			padding-top: 27px;
+		}
+
+		&._pb_lg {
+			padding-bottom: 32px;
+
+			@media (max-width: $sm) {
+				padding-bottom: 20px;
+			}
+		}
 	}
 }

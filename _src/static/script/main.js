@@ -9,8 +9,15 @@ $(window).resize(function() {
 	}
 });
 
+// ///////////////////////////////////// style
 $('button	').on('click', function() {
 	$(this).blur();
+});
+
+
+$('select').on('change', function (){
+	let color = $(this).find('option').css('color');
+	$(this).css('color', color);
 });
 
 @@include('block/_hamburger.js')

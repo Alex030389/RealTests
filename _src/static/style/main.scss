@@ -4,12 +4,6 @@
 @import "base/util";
 @import "animation/rotate";
 
-/* Removing default outline only after we've added our custom one */
-.btnf:focus,
-.btnf__content:focus {
-	outline: none;
-}
-
 // ///////////////////////////////////////// block
 @import "block/container";
 @import "block/title-box";
@@ -53,7 +47,11 @@
 @import "block/take-simulator";
 @import "block/faq-list";
 @import "block/page-404";
-
+@import "block/form/form";
+@import "block/form/form-group";
+@import "block/form/form-label";
+@import "block/form/form-control";
+@import "block/form/select-wrap";
 
 @import "block/footer/footer";
 @import "block/modal/modal";

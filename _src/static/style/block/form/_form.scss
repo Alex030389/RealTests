@@ -1,0 +1,27 @@
+.form {
+	max-width: 1130px;
+	margin: 0 auto;
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -24px;
+	}
+
+	&__col {
+		width: $col-1;
+		padding: 0 24px;
+
+		&._2 {
+			width: $col-2;
+
+			@media (max-width: $md) {
+				width: $col-1;
+			}
+		}
+
+		&._mb_md {
+			margin-bottom: 20px;
+		}
+	}
+}
