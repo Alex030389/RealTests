@@ -1,0 +1,23 @@
+.box-checkbox-link {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 9px 0;
+
+	@media (max-width: $sm) {
+		flex-direction: column;
+	}
+
+	&__checkbox {
+		@media (max-width: $sm) {
+			padding-top: 7px;
+		}
+	}
+
+	&__link {
+		@media (max-width: $sm) {
+			margin-bottom: 10px;
+			padding-top: 20px;
+		}
+	}
+}

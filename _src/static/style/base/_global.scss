@@ -68,7 +68,13 @@ img {
 	opacity: 0;
 }
 
+// remove button clear form
 ::-ms-clear {
+	display: none;
+}
+
+// remove button show password
+::-ms-reveal {
 	display: none;
 }
 

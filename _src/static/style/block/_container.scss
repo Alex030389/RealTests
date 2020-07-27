@@ -65,6 +65,17 @@
 		padding-bottom: 24px;
 	}
 
+	&._log-in {
+		max-width: 500px;
+		padding-top: 43px;
+		padding-bottom: 60px;
+
+		@media (max-width: $sm) {
+			padding-top: 10px;
+			padding-bottom: 40px;
+		}
+	}
+
 	&._pt_1 {
 		padding-top: 15px;
 	}

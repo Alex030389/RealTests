@@ -241,83 +241,97 @@
 
 
 <main class="main">
-	<ul class="breadcrumb">
-	<li class="breadcrumb__item">
-		<a class="breadcrumb__link" href="#">Home</a>
-	</li>
-	<li class="breadcrumb__item">
-		<a class="breadcrumb__link" href="#">CompTIA</a>
-	</li>
-	<li class="breadcrumb__item _current">220-1001</li>
-</ul>
 
-	<!-- ////////////////////////////////////////////////////////// exam -->
+	<!-- //////////////////////////////////////////////////////// log in -->
 	<section>
-		<div class="container _free-demo">
-			<div class="exam _fd_column">
-				<div class="exam__inner">
-					<div class="exam__box-img-btn">
-						<img class="exam__img" src="static/img/course/course-2.png" alt="img">
+		<h1 class="visually-hidden">Log in</h1>
+		<div class="container _log-in">
+			<div class="tab _pt_sm">
+				<div class="tab__wrap-btn-list">
+					<div class="tab__btn-list _after-d-none">				
+						<button class="tab__btn _wide_180 _active btn-reset" data-tab-btn="0">Sign In</button>
+						<button class="tab__btn _wide_180 btn-reset" data-tab-btn="1">Sign Up</button>
 					</div>
-					<div class="exam__content">
-						<h1 class="exam__title title-2 _lh_32">Try our material</h1>
-						<p class="exam__p">Get a free sample of any exam Questions and Answers on the web site</p>
-						<ul class="exam__list _pb_lg list d-sm-none">
-							<li class="list__item">Exam Engine with customizable criteria</li>
-							<li class="list__item">Score comparison and improvement check</li>
-							<li class="list__item">Immediate Download after Payment</li>
-							<li class="list__item">Tested and verified malware-free software </li>
-						</ul><!--exam__list-->
-					</div><!--/exam__content-->					
-				</div><!--/exam__inner-->
-				<ul class="exam__list _pb_lg list d-none d-sm-block">
-					<li class="list__item">Exam Engine with customizable criteria</li>
-					<li class="list__item">Score comparison and improvement check</li>
-					<li class="list__item">Immediate Download after Payment</li>
-					<li class="list__item">Tested and verified malware-free software </li>
-				</ul><!--exam__list-->
-			</div><!--/exam-->
-		</div>
-	</section>
-
-	<!-- //////////////////////////////////////////////////////// choose an exam -->
-	<section class="s _gray">
-		<div class="container _choose-exam">
-			<h2 class="title _fz_24 _ta_center _mb_2-5">Choose an exam to sample</h2>
-			<form class="form" action="#">
-				<div class="form__row">
-					<div class="form__col _2 _mb_md form-group">
-						<label class="form-label" for="vendor">Vendor</label>
-						<div class="select-wrap">
-							<select class="form-control _select" name="vendor" id="vendor">
-								<option value="" disabled selected hidden>Please Choose...</option>
-								<option value="1">one</option>
-								<option value="2">two</option>
-								<option value="3">three</option>
-							</select>
-						</div><!--/select-wrap-->
-					</div>
-					<div class="form__col _2 _mb_md form-group">
-						<label class="form-label" for="exam">Exam</label>
-						<div class="select-wrap">
-							<select class="form-control _select" name="exam" id="exam">
-								<option value="" disabled selected hidden>Please Choose...</option>
-								<option value="1">one</option>
-								<option value="2">two</option>
-								<option value="3">three</option>
-							</select>
-						</div><!--/select-wrap-->
-					</div>
-					<div class="form__col _2 _mb_md form-group">
-						<label class="form-label" for="email">Email address</label>
-						<input class="form-control" id="email" type="text" placeholder="Your email Address">
-					</div>
-					<div class="form__col _2 _mb_md form-group">
-						<span class="form-label _transparent">Button</span>
-						<button class="form-btn btn-reset btn _primary _h_lg _w_100">Download Demo</button>
-					</div>
-				</div><!--form__row-->
-			</form>
+				</div>
+				<div class="tab__content-list">
+					<div class="tab__content" data-tab-content="0">
+						<form class="form" action="#">
+							<div class="form-group _mb_md">
+								<label class="form-label" for="email">Email</label>
+								<input class="form-control" id="email" type="text" placeholder="Email Address">
+							</div>
+							<div class="form-group _mb_md">
+								<label class="form-label" for="password">Password</label>
+								<div class="password-wrap">
+									<input class="password-wrap__form-control form-control" id="password" type="password" placeholder="Password">
+									<button class="password-wrap__btn btn btn-reset" data-btn="show-password" type="button" aria-label="show password">
+										<svg aria-hidden="true">
+											<use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="form-group _mb_md box-checkbox-link">
+								<div class="box-checkbox-link__checkbox box-checkbox">
+									<input class="box-checkbox__form-control visually-hidden" type="checkbox" id="remember-me">
+									<label class="box-checkbox__form-label" for="remember-me">Remember me</label>
+								</div>
+								<a class="box-checkbox-link__link link _fz_16" style="line-height: 1;" href="#">Forgot yout password</a>
+							</div>
+							<div class="form-group">
+								<button class="form-btn btn-reset btn _primary _h_lg _w_100">Sign In</button>
+							</div>
+						</form>
+					</div><!--/tab__content-->
+					<div class="tab__content" data-tab-content="1">
+						<form class="form" action="#">
+							<div class="form-group _mb_md">
+								<label class="form-label" for="email">Email</label>
+								<input class="form-control" id="email" type="text" placeholder="Email Address">
+							</div>
+							<div class="form-group _mb_md">
+								<label class="form-label" for="email">Email</label>
+								<input class="form-control" id="email" type="text" placeholder="Email Address">
+							</div>
+							<div class="form-group _mb_md">
+								<label class="form-label" for="email">Email</label>
+								<input class="form-control" id="email" type="text" placeholder="Email Address">
+							</div>
+							<div class="form-group _mb_md">
+								<label class="form-label" for="password">Password</label>
+								<div class="password-wrap">
+									<input class="password-wrap__form-control form-control" id="password" type="password" placeholder="Password">
+									<button class="password-wrap__btn btn btn-reset" data-btn="show-password" type="button" aria-label="show password">
+										<svg aria-hidden="true">
+											<use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="form-group _mb_md">
+								<label class="form-label" for="password">Password</label>
+								<div class="password-wrap">
+									<input class="password-wrap__form-control form-control" id="password" type="password" placeholder="Password">
+									<button class="password-wrap__btn btn btn-reset" data-btn="show-password" type="button" aria-label="show password">
+										<svg aria-hidden="true">
+											<use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="form-group _mb_md box-checkbox-link">
+								<div class="box-checkbox-link__checkbox box-checkbox">
+									<input class="box-checkbox__form-control visually-hidden" type="checkbox" id="remember-me">
+									<label class="box-checkbox__form-label" for="remember-me">Subscribe</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<button class="form-btn btn-reset btn _primary _h_lg _w_100">Sign In</button>
+							</div>
+						</form>
+					</div><!--/tab__content-->
+				</div><!--/tab__content-list-->
+			</div><!--/tab-->
 		</div><!--/container-->
 	</section>
 

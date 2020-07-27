@@ -1,0 +1,34 @@
+.box-checkbox {
+	&__form-label {
+		position: relative;
+
+		margin-bottom: 0;
+		padding-left: 36px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: -2px;
+			left: 0;
+
+			width: 28px;
+			height: 28px;
+
+			border: 2px solid #1273eb;
+			border-radius: 2px;
+
+			@media (max-width: $sm) {
+				top: 0;
+
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+
+	&__form-control:checked + &__form-label::after {
+		background: url(../img/icon/checkbox.svg) center center no-repeat #1273eb;
+		background-size: 100% 100%;
+		border: none;
+	}
+}

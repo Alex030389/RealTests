@@ -29,6 +29,12 @@
 			flex-shrink: 0;
 			width: 15px;
 		}
+
+		&._after-d-none {
+			&::after {
+				display: none;
+			}
+		}
 	}
 
 	&__btn {
@@ -57,6 +63,10 @@
 
 		&:hover {
 			color: #6e6d7a;
+		}
+
+		&._wide_180 {
+			width: 180px;
 		}
 
 		&._active {
