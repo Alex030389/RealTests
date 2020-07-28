@@ -1,6 +1,12 @@
 .list {
 	@extend .list-reset;
 
+	font-size: 18px;
+
+	@media (max-width: $sm) {
+		font-size: 16px;
+	}
+
 	&__item {
 		position: relative;
 
@@ -13,7 +19,7 @@
 		&::before {
 			content: "";
 			position: absolute;
-			top: 9px;
+			top: 8px;
 			left: 0;
 
 			display: inline-block;
