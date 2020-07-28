@@ -6,7 +6,7 @@
 	<!-- //////////////////////////////////////////////////////// log in -->
 	<section>
 		<h1 class="visually-hidden">Log in</h1>
-		<div class="container _log-in">
+		<div class="container _small _log-in">
 			<div class="tab _pt_sm">
 				<div class="tab__wrap-btn-list">
 					<div class="tab__btn-list _after-d-none">				
@@ -47,21 +47,21 @@
 					<div class="tab__content" data-tab-content="1">
 						<form class="form" action="#">
 							<div class="form-group _mb_md">
-								<label class="form-label" for="email">Email</label>
-								<input class="form-control" id="email" type="text" placeholder="Email Address">
+								<label class="form-label" for="first-name">First Name</label>
+								<input class="form-control" id="first-name" type="text" placeholder="First Name">
 							</div>
 							<div class="form-group _mb_md">
-								<label class="form-label" for="email">Email</label>
-								<input class="form-control" id="email" type="text" placeholder="Email Address">
+								<label class="form-label" for="last-name">Last Name</label>
+								<input class="form-control" id="last-name" type="text" placeholder="Last Name">
 							</div>
 							<div class="form-group _mb_md">
-								<label class="form-label" for="email">Email</label>
-								<input class="form-control" id="email" type="text" placeholder="Email Address">
+								<label class="form-label" for="email-2">Email</label>
+								<input class="form-control" id="email-2" type="text" placeholder="Email">
 							</div>
 							<div class="form-group _mb_md">
-								<label class="form-label" for="password">Password</label>
+								<label class="form-label" for="password-2">Password</label>
 								<div class="password-wrap">
-									<input class="password-wrap__form-control form-control" id="password" type="password" placeholder="Password">
+									<input class="password-wrap__form-control form-control" id="password-2" type="password" placeholder="Password">
 									<button class="password-wrap__btn btn btn-reset" data-btn="show-password" type="button" aria-label="show password">
 										<svg aria-hidden="true">
 											<use xlink:href="static/img/symbol/sprite.svg#eye"></use>
@@ -70,9 +70,9 @@
 								</div>
 							</div>
 							<div class="form-group _mb_md">
-								<label class="form-label" for="password">Password</label>
+								<label class="form-label" for="password-3">Confirm Password</label>
 								<div class="password-wrap">
-									<input class="password-wrap__form-control form-control" id="password" type="password" placeholder="Password">
+									<input class="password-wrap__form-control form-control" id="password-3" type="password" placeholder="Confirm Password">
 									<button class="password-wrap__btn btn btn-reset" data-btn="show-password" type="button" aria-label="show password">
 										<svg aria-hidden="true">
 											<use xlink:href="static/img/symbol/sprite.svg#eye"></use>
@@ -82,8 +82,8 @@
 							</div>
 							<div class="form-group _mb_md box-checkbox-link">
 								<div class="box-checkbox-link__checkbox box-checkbox">
-									<input class="box-checkbox__form-control visually-hidden" type="checkbox" id="remember-me">
-									<label class="box-checkbox__form-label" for="remember-me">Subscribe</label>
+									<input class="box-checkbox__form-control visually-hidden" type="checkbox" id="subscribe">
+									<label class="box-checkbox__form-label" for="subscribe">Subscribe</label>
 								</div>
 							</div>
 							<div class="form-group">
@@ -98,6 +98,5 @@
 
 </main>
 
-@@include('block/footer/_footer.html')
 @@include('block/modal/_modal.html')
 @@include('block/_scripts.html')

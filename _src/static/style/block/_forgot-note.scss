@@ -1,0 +1,13 @@
+.forgot-note {
+	font-size: 14px;
+	text-align: center;
+	color: #6e6d7a;
+
+	&__p:not(:last-child) {
+		margin-bottom: 33px;
+
+		@media (max-width: $sm) {
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -2,6 +2,9 @@
 	display: flex;
 	flex-direction: column;
 
+	&._mb_lg {
+		margin-bottom: 30px;
+	}
 	&._mb_md {
 		margin-bottom: 20px;
 	}

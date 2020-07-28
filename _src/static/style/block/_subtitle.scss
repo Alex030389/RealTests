@@ -6,11 +6,19 @@
 	font-size: 18px;
 	text-align: center;
 
-	.link {
-		vertical-align: baseline;
-	}
-
 	@media (max-width: $sm) {
 		font-size: 14px;
+	}
+
+	&._mb_xl {
+		margin-bottom: 40px;
+
+		@media (max-width: $sm) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.link {
+		vertical-align: baseline;
 	}
 }
