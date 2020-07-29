@@ -1,0 +1,36 @@
+.security-code {
+	display: flex;
+	align-items: center;
+
+	&__form-control-box {
+		position: relative;
+
+		width: 535px;
+	}
+
+	&__form-control {
+		padding-right: 170px;
+	}
+
+	&__img {
+		position: absolute;
+		top: 50%;
+		right: 4px;
+
+		width: 150px;
+
+		transform: translateY(-50%);
+
+		@media (max-width: $sm) {
+			right: 3px;
+
+			width: 116px;
+		}
+	}
+
+	&__info {
+		padding-left: 20px;
+
+		font-size: 14px;
+	}
+}

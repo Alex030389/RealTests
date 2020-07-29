@@ -2,6 +2,13 @@
 	display: flex;
 	flex-direction: column;
 
+	&._mb_xl {
+		margin-bottom: 36px;
+		@media (max-width: $sm) {
+			margin-bottom: 30px;
+		}
+	}
+
 	&._mb_lg {
 		margin-bottom: 30px;
 	}

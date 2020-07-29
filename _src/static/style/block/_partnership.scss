@@ -2,44 +2,108 @@
 	padding-top: 30px;
 	padding-bottom: 20px;
 
-	&__content {
+	&__row {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -10px;
 	}
 
-	&__box {
-		width: calc(100% / 3  - 21px);
-		margin: 0 10px 20px;
-		padding: 15px;
+	&__col {
+		width: $col-3;
+		padding: 0 10px 20px;
 
 		@media (max-width: $xl) {
-			width: calc(100% / 2  - 20px);
+			width: $col-2;
 		}
 
 		@media (max-width: $md) {
-			width: 100%;
+			width: $col-1;
 		}
 
 		&._large {
-			width: calc((100% / 3 - 10px) * 2);
-			padding: 30px;
+			width: 100% - $col-3;
 
 			@media (max-width: $xl) {
 				order: -1;
-				width: 100%;
+				width: $col-1;
+				padding-bottom: 45px;
+			}
+		}
+	}
+
+	&__box {
+		height: 100%;
+		padding: 30px 26px;
+
+		@media (max-width: $sm) {
+			padding: 20px 10px 15px;
+		}
+
+		&._h_auto {
+			height: auto;
+
+			@media (max-width: $xl) {
+				height: 100%;
 			}
 		}
 
-		&._flx_start {
-			align-self: flex-start;
+		&._large {
+			padding: 33px 70px 4px 50px;
 
 			@media (max-width: $xl) {
-				align-self: auto;
+				padding: 20px 0 0 0;
+			}
+
+			@media (max-width: $sm) {
+				padding-top: 0;
 			}
 		}
 	}
 
 	&__title {
+		margin-bottom: 14px;
+		padding-left: 14px;
+
+		font-weight: 600;
+		font-size: 24px;
+
+		@media (max-width: $sm) {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+	&__title-2 {
+		margin-bottom: 25px;
+
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+
+		@media (max-width: $sm) {
+			margin-bottom: 20px;
+
+			font-size: 16px;
+		}
+	}
+
+	&__list {
+	}
+
+	&__text {
+		padding: 15px 12px 0;
+		p {
+			&:last-child {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__btn {
+		width: 300px;
+
+		@media (max-width: $sm) {
+			width: 100%;
+		}
 	}
 }
