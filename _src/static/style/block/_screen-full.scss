@@ -1,0 +1,8 @@
+.screen-full {
+	&._sm {
+		@media (max-width: $sm) {
+			margin-right: -15px;
+			margin-left: -15px;
+		}
+	}
+}

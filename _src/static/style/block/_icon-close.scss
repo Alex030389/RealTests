@@ -1,0 +1,14 @@
+.icon-close {
+	width: 16px;
+	height: 16px;
+
+	fill: #374957;
+
+	&._opacity_60 {
+		opacity: 60%;
+
+		&:hover {
+			opacity: 100%;
+		}
+	}
+}

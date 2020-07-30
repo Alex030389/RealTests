@@ -10,8 +10,9 @@
 @import "block/title/title";
 @import "block/title/title-2";
 @import "block/subtitle";
+@import "block/button/wrap-btn";
 @import "block/button/btn";
-@import "block/button/btn-close";
+@import "block/icon-close";
 @import "block/link/link";
 @import "block/list/list";
 @import "block/form/input";
@@ -59,6 +60,15 @@
 @import "block/forgot-note";
 @import "block/partnership";
 @import "block/form/security-code";
+@import "block/cart";
+@import "block/billing-info";
+@import "block/form/expiration-date";
+@import "block/form/cvv-code";
+@import "block/screen-full";
+@import "block/table/table";
+@import "block/table/table-cart";
+@import "block/form/form-group-btn";
+
 
 @import "block/footer/footer";
 @import "block/modal/modal";

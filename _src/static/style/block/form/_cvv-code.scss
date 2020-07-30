@@ -1,0 +1,34 @@
+.cvv-code {
+	display: flex;
+	align-items: center;
+
+	&__form-control {
+		width: 48%;
+		margin-right: 20px;
+
+		@media (max-width: $sm) {
+			margin-right: 8px;
+		}
+	}
+
+	&__btn {
+		position: relative;
+
+		display: flex;
+		align-items: center;
+		width: 140px;
+	}
+
+	&__img {
+		width: 50px;
+		margin-right: 8px;
+	}
+
+	&__text {
+		font-size: 16px;
+
+		@media (max-width: $sm) {
+			font-size: 14px;
+		}
+	}
+}

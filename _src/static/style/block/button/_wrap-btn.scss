@@ -1,0 +1,9 @@
+.wrap-btn {
+	&._pt_sm {
+		padding-top: 10px;
+
+		@media (max-width: $sm) {
+			padding-top: 8px;
+		}
+	}
+}

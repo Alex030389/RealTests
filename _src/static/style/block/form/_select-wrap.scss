@@ -25,4 +25,11 @@
 			height: 16px;
 		}
 	}
+
+	&._sm {
+		&::after {
+			width: 16px;
+			height: 16px;
+		}
+	}
 }

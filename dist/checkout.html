@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<meta name="description" content="description">
+	<link rel="icon" href="static/img/favicon/favicon.png">
+	<!-- Custom Browsers Color Start -->
+	<!-- <meta name="theme-color" content="#fff"> -->
+	<link rel="stylesheet" href="static/css/libs.min.css">
+	<link rel="stylesheet" href="static/css/main.min.css">
+	<script src="static/js/jquery-3.5.1.min.js"></script>	
+</head>
+<body>
+<header class="header">
+	<div class="container _large">
+		<div class="header__box-m-btn">
+			<button class="header__m-btn btn-reset" data-m-btn="open" aria-label="open mobile menu">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#hamburger"></use>
+				</svg>
+			</button>
+			<button class="header__m-btn btn-reset" aria-label="open search">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#search"></use>
+				</svg>
+			</button>
+		</div><!--/header__box-m-btn-->
+		<a class="header__logo logo" href="#">
+			<img src="static/img/logo/logo.png" alt="logo">
+		</a>
+		<nav class="header__main-nav main-nav" data-nav="main">
+			<ul class="main-nav__list">
+				<li class="main-nav__item _dropdown">
+					<a class="main-nav__link" href="#">
+						<span>Products</span>
+						<svg class="main-nav__arrow arrow-dropdown" aria-hidden="true">
+							<use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
+						</svg>	
+					</a>
+					<ul class="main-nav__sub-nav sub-nav">
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-nav__item">
+							<a class="sub-nav__link link" href="#">Fortinet</a>
+						</li>
+					</ul>				
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Samples</a>					
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Guarantee</a>					
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Testimonials</a>					
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Power Packs</a>					
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Partners</a>					
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">Contact Us</a>					
+				</li>
+				<li class="main-nav__item">
+					<a class="main-nav__link" href="#">About Us</a>					
+				</li>
+			</ul>
+		</nav>
+		<ul class="header__user-menu user-menu">
+			<li class="user-menu__item">
+				<button class="user-menu__btn btn-reset" aria-label="button search">
+					<svg class="header__icon" aria-hidden="true">
+						<use xlink:href="static/img/symbol/sprite.svg#search"></use>
+					</svg>
+				</button>
+			</li>
+			<li class="user-menu__item">
+				<a class="user-menu__btn link-reset" href="#">
+					<svg class="header__icon" aria-hidden="true">
+						<use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+					</svg>
+					<span class="user-menu__cart-quantity">(0)</span>
+				</a>
+			</li>
+			<li class="user-menu__item">
+				<a class="user-menu__btn link-reset" href="#">Sign in</a>
+			</li>
+			<li class="user-menu__item">
+				<a class="user-menu__btn _border link-reset" href="#">Sign up</a>
+			</li>
+		</ul>
+		<div class="header__box-m-btn">
+			<a class="header__m-btn" href="#" aria-label="cart link">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#cart"></use>
+				</svg>
+			</a>
+			<a class="header__m-btn" href="#" aria-label="user account link">
+				<svg class="header__icon" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#user"></use>
+				</svg>
+			</a>
+		</div><!--/header__box-m-btn-->
+	</div><!--/container-->
+
+	<!-- mobile nav -->
+	<nav class="header__main-m-nav main-m-nav" data-nav="main-m-nav">
+		<div class="main-m-nav__inner" data-nav="m-nav-inner">
+			<button class="main-m-nav__btn-close btn-reset" data-m-btn="close" aria-label="close mobile nav">
+				<svg class="icon-close" aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#close"></use>
+				</svg>
+			</button>
+			<ul class="main-m-nav__list" data-nav="main-m-list">
+				<li class="main-m-nav__item _dropdown" >
+					<a class="main-m-nav__link" href="#">
+						<span>Products</span>
+						<svg class="main-m-nav__arrow arrow-dropdown" aria-hidden="true">
+							<use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
+						</svg>	
+					</a>
+					<ul class="main-m-nav__sub-nav sub-m-nav">
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Adobe</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Avaya</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Citrix</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Eccouncil</a>
+						</li>
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">Fortinet</a>
+						</li>
+					</ul>				
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Samples</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Guarantee</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Testimonials</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Power Packs</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Partners</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">Contact Us</a>					
+				</li>
+				<li class="main-m-nav__item">
+					<a class="main-m-nav__link" href="#">About Us</a>					
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+
+<main class="main">
+	<ul class="breadcrumb">
+	<li class="breadcrumb__item">
+		<a class="breadcrumb__link" href="#">Home</a>
+	</li>
+	<li class="breadcrumb__item">
+		<a class="breadcrumb__link" href="#">CompTIA</a>
+	</li>
+	<li class="breadcrumb__item _current">220-1001</li>
+</ul>
+	<section class="cart">
+		<div class="container">
+			<h1 class="cart__title title _ta_center _fz_36">Review Your Order</h1>
+			<p class="cart__subtitle subtitle">The following items have been added to your shopping cart. Now, please, enter your billing information below, as it appears on your credit card statement.</p>
+			<p class="cart__wrap-title-link">
+				<a class="cart__link link" href="#">Need help with your purchase?</a>
+			</p>
+			<div class="screen-full _sm">
+				<table class="table table-cart">
+					<thead>
+						<tr>
+							<th class="table__td _ta_center">Qty</th>
+							<th class="">Item Description</th>
+							<th class="table__td _ta_center">Price</th>
+							<th class=""></th>
+						</tr>
+					</thead>					
+					<tbody>
+						<tr>
+							<td class="table__td _ta_center">
+								<div class="select-wrap _sm">
+									<select class="form-control _select _h_sm" name="exam" id="exam">
+										<option value="1">1-2 Computers</option>
+										<option value="2">3 Computers</option>
+										<option value="3">4 Computers</option>
+										<option value="4">5 Computers</option>
+									</select>
+								</div><!--/select-wrap-->
+							</td>
+							<td>
+								<a class="table-cart__link link" href="#">CompTIA N10-007 Q&A</a>
+								<div class="table__info">$7.00 Instant Discount</div>
+							</td>
+							<td class="table__td _ta_center">$69.99</td>
+							<td class="table__td _ta_center" style="vertical-align: center;">
+								<a class="table-cart__del link-reset" href="#" style="vertical-align: center;">
+									<svg class="icon-close _opacity_60" aria-hidden="true">
+										<use xlink:href="static/img/symbol/sprite.svg#close"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__td _ta_center">
+								<div class="select-wrap _sm">
+									<select class="form-control _select _h_sm" name="exam" id="exam">
+										<option value="1">1-2 Computers</option>
+										<option value="2">3 Computers</option>
+										<option value="3">4 Computers</option>
+										<option value="4">5 Computers</option>
+									</select>
+								</div><!--/select-wrap-->
+							</td>
+							<td>
+								<a class="table-cart__link link" href="#">CompTIA N10-007 Q&A</a>
+								<div class="table__info">$7.00 Instant Discount</div>
+							</td>
+							<td class="table__td _ta_center">$69.99</td>
+							<td class="table__td _ta_center">
+								<a class="table-cart__del link-reset" href="#">
+									<svg class="icon-close _opacity_60" aria-hidden="true">
+										<use xlink:href="static/img/symbol/sprite.svg#close"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>			
+						<tr>
+							<td class="table__td _ta_center">
+								<div class="select-wrap _sm">
+									<select class="form-control _select _h_sm" name="exam" id="exam">
+										<option value="1">1-2 Computers</option>
+										<option value="2">3 Computers</option>
+										<option value="3">4 Computers</option>
+										<option value="4">5 Computers</option>
+									</select>
+								</div><!--/select-wrap-->
+							</td>
+							<td>
+								<a class="table-cart__link link" href="#">CompTIA N10-007 Q&A</a>
+								<div class="table__info">$7.00 Instant Discount</div>
+							</td>
+							<td class="table__td _ta_center">$69.99</td>
+							<td class="table__td _ta_center">
+								<a class="table-cart__del link-reset" href="#">
+									<svg class="icon-close _opacity_60" aria-hidden="true">
+										<use xlink:href="static/img/symbol/sprite.svg#close"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>			
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="4">
+								<div class="table-cart__form-group-btn">
+									<input class="table-cart__form-control form-control _h_md" id="email" type="text" placeholder="Promotion Code">
+									<button class="table-cart__btn btn-reset btn _primary">Apply</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div class="table-cart__box-continue-total">
+									<a class="table-cart__continue link" href="#">Continue Shopping</a>
+									<div class="table-cart__total">Total : $69.99</div>								
+								</div>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div><!--/wrap-no-space-->
+		</div><!--/container-->
+	</section>
+
+	<!-- //////////////////////////////////////////////////////// Secure Billing Information -->
+	<section class="billing-info">
+		<form class="form" action="#">
+			<div class="s _lite-gray">
+				<div class="billing-info__container container _middle">
+					<h2 class="billing-info__title title _fz_36 _ta_center">Secure Billing Information</h2>
+						<div class="form__row">
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="name">First Name on Card</label>
+								<input class="form-control" id="name" type="text" placeholder="First Name on Card">
+							</div>
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="last-name">Last Name on Card</label>
+								<input class="form-control" id="last-name" type="text" placeholder="Last Name on Card">
+							</div>
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="address">Address</label>
+								<input class="form-control" id="address" type="text" placeholder="Address">
+							</div>
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="city">City</label>
+								<input class="form-control" id="city" type="text" placeholder="City">
+							</div>
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="state">State/province</label>
+								<input class="form-control" id="state" type="text" placeholder="State/province">
+							</div>
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="vendor">Country</label>
+								<div class="select-wrap">
+									<select class="form-control _select" name="vendor" id="vendor">
+										<option value="" disabled selected hidden>Select Country</option>
+										<option value="1">one</option>
+										<option value="2">two</option>
+										<option value="3">three</option>
+									</select>
+								</div><!--/select-wrap-->
+							</div>
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="zip">Zip/Postal Code</label>
+								<input class="form-control" id="zip" type="text" placeholder="Zip/Postal Code">
+							</div>
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="email">Email address</label>
+								<input class="form-control" id="email" type="text" placeholder="Email address">
+							</div>
+						</div><!--form__row-->
+				</div><!--/container-->
+			</div>
+			<div class="s _gray">
+				<div class="billing-info__container _last container _middle">
+						<div class="form__row">
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="cart-number">Card Number</label>
+								<input class="form-control" id="cart-number" type="text" placeholder="Card Number">
+							</div>
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="card-type">Card Type</label>
+								<div class="select-wrap">
+									<select class="form-control _select" id="card-type">
+										<option value="" disabled selected hidden>Select Type</option>
+										<option value="1">one</option>
+										<option value="2">two</option>
+										<option value="3">three</option>
+									</select>
+								</div><!--/select-wrap-->
+							</div>
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="date-start">Expiration Date</label>
+								<div class="expiration-date">
+									<div class="expiration-date__select-wrap select-wrap">
+										<select class="form-control _select" id="date-start">
+											<option value="" disabled selected hidden>Select Type</option>
+											<option value="1">01</option>
+											<option value="2">02</option>
+											<option value="3">03</option>
+										</select>
+									</div>
+									<div class="expiration-date__select-wrap select-wrap">
+										<select class="form-control _select" id="date-end">
+											<option value="" disabled selected hidden>Select Type</option>
+											<option value="1">2018</option>
+											<option value="2">2019</option>
+											<option value="3">2020</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form__col _2 form-group _mb_md">
+								<label class="form-label" for="cvv-code">CVV Code</label>
+								<div class="cvv-code">
+									<input class="cvv-code__form-control form-control" id="cvv-code" type="text" placeholder="CVV Code" maxlength="4">
+									<button class="cvv-code__btn btn-reset ">
+										<img class="cvv-code__img" src="static/img/ui/card.png" alt="card">
+										<span class="cvv-code__text link link-stretched">What is This?</span>
+									</button>
+								</div>
+							</div>
+							<div class="form__col wrap-btn _pt_sm">
+								<button class="billing-info__btn form-btn btn-reset btn _primary _h_lg">Pay Now</button>
+							</div>
+						</div><!--form__row-->
+					</div><!--/container-->
+			</div>
+		</form>
+			
+	</section>
+
+</main>
+
+<footer class="footer">
+	<div class="footer__top">
+		<div class="footer__row container">
+			<div class="footer__col">
+				<h3 class="footer__title">Products</h3>
+				<a class="footer__link" href="#">Demo</a>
+				<a class="footer__link" href="#">Testing Engine</a>
+				<a class="footer__link" href="#">Search Exams</a>
+				<a class="footer__link" href="#">Admission Tests</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Company Info</h3>
+				<a class="footer__link" href="#">Contact Us</a>
+				<a class="footer__link" href="#">About Us</a>
+				<a class="footer__link" href="#">Customer Feedbacks</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Security & Privacy</h3>
+				<a class="footer__link" href="#">Privacy</a>
+				<a class="footer__link" href="#">Disclaimer</a>
+				<a class="footer__link" href="#">Terms & Conditions</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Servicy & Support</h3>
+				<a class="footer__link" href="#">Payment & Shipping</a>
+				<a class="footer__link" href="#">FAQs</a>
+				<a class="footer__link" href="#">Guarantee</a>
+			</div>
+			<div class="footer__col">
+				<h3 class="footer__title">Partners Profram</h3>
+				<a class="footer__link" href="#">Multiuser</a>
+				<a class="footer__link" href="#">Reseller</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="container">
+			Copyright &copy; 2006-2020 passguide.com , All Rights Reserved. Passguide.com Materials do not contain actual questions and answers from Cisco's Certification Exams.
+		</div>
+	</div>	
+</footer>
+<div class="modal">
+</div>
+
+	<script src="static/js/libs.min.js"></script>
+	<script src="static/js/main.min.js"></script>
+</body>
+</html>
