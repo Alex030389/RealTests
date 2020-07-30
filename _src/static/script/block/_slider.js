@@ -11,6 +11,11 @@ $('[data-slide="0"]').slick({
 	fade: true
 });
 
+$('[data-slide="0"]').on('lazyLoaded', function(event, slick, currentSlide, nextSlide){
+  objectFitImages();
+});
+
+
 //////////////////////////////////////////// data-slider="1"
 $('[data-slider="1"]').slick({
 	slidesToShow: 3,

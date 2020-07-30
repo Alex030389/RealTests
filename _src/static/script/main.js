@@ -2,8 +2,11 @@
 
 svg4everybody();
 
+// polifill
+objectFitImages();
+
 $(window).resize(function() {
-	if($('.header__box-m-btn').is(':hidden')) {
+if($('.header__box-m-btn').is(':hidden')) {
 		// _hamburger.js
 		closeMobMenu()		
 	}
