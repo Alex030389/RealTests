@@ -1,6 +1,6 @@
 .agitation {
 	width: 100%;
-	// height: 509px;
+
 	&__slider {
 		position: absolute;
 		top: 0;
@@ -16,98 +16,112 @@
 	}
 
 	&__slider-item {
+		position: relative;
+
 		width: 100%;
-		&._1 {
-			background: url(../img/agitation-slider/1.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/1m.jpg);
-			}
+
+
+
+		img {
+			width: 100%;
+			// width: 1920px;
+			height: 100%;
+
+			object-fit: cover;
+			// object-position: top left;
 		}
-		&._2 {
-			background: url(../img/agitation-slider/2.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/2m.jpg);
-			}
-		}
-		&._3 {
-			background: url(../img/agitation-slider/3.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/3m.jpg);
-			}
-		}
-		&._4 {
-			background: url(../img/agitation-slider/4.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/4m.jpg);
-			}
-		}
-		&._5 {
-			background: url(../img/agitation-slider/5.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/5m.jpg);
-			}
-		}
-		&._6 {
-			background: url(../img/agitation-slider/6.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/6m.jpg);
-			}
-		}
-		&._7 {
-			background: url(../img/agitation-slider/7.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/7m.jpg);
-			}
-		}
-		&._8 {
-			background: url(../img/agitation-slider/8.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/8m.jpg);
-			}
-		}
-		&._9 {
-			background: url(../img/agitation-slider/9.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/9m.jpg);
-			}
-		}
-		&._10 {
-			background: url(../img/agitation-slider/10.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/10m.jpg);
-			}
-		}
-		&._11 {
-			background: url(../img/agitation-slider/11.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/11m.jpg);
-			}
-		}
-		&._12 {
-			background: url(../img/agitation-slider/12.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/12m.jpg);
-			}
-		}
-		&._13 {
-			background: url(../img/agitation-slider/13.jpg) center center no-repeat;
-			background-size: cover;
-			@media (max-width: $sm) {
-				background-image: url(../img/agitation-slider/13m.jpg);
-			}
-		}
+
+		// &._1 {
+		// 	background: url(../img/agitation-slider/1.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/1m.jpg);
+		// 	}
+		// }
+		// &._2 {
+		// 	background: url(../img/agitation-slider/2.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/2m.jpg);
+		// 	}
+		// }
+		// &._3 {
+		// 	background: url(../img/agitation-slider/3.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/3m.jpg);
+		// 	}
+		// }
+		// &._4 {
+		// 	background: url(../img/agitation-slider/4.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/4m.jpg);
+		// 	}
+		// }
+		// &._5 {
+		// 	background: url(../img/agitation-slider/5.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/5m.jpg);
+		// 	}
+		// }
+		// &._6 {
+		// 	background: url(../img/agitation-slider/6.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/6m.jpg);
+		// 	}
+		// }
+		// &._7 {
+		// 	background: url(../img/agitation-slider/7.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/7m.jpg);
+		// 	}
+		// }
+		// &._8 {
+		// 	background: url(../img/agitation-slider/8.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/8m.jpg);
+		// 	}
+		// }
+		// &._9 {
+		// 	background: url(../img/agitation-slider/9.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/9m.jpg);
+		// 	}
+		// }
+		// &._10 {
+		// 	background: url(../img/agitation-slider/10.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/10m.jpg);
+		// 	}
+		// }
+		// &._11 {
+		// 	background: url(../img/agitation-slider/11.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/11m.jpg);
+		// 	}
+		// }
+		// &._12 {
+		// 	background: url(../img/agitation-slider/12.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/12m.jpg);
+		// 	}
+		// }
+		// &._13 {
+		// 	background: url(../img/agitation-slider/13.jpg) center center no-repeat;
+		// 	background-size: cover;
+		// 	@media (max-width: $sm) {
+		// 		background-image: url(../img/agitation-slider/13m.jpg);
+		// 	}
+		// }
 	}
 
 	&__container {
