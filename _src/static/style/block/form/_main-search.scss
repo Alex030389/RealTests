@@ -10,7 +10,6 @@
 	&__inner {
 		padding: 24px 20px 20px;
 
-
 		@media (max-width: 1350px) {
 			display: flex;
 			width: 100%;
@@ -18,9 +17,14 @@
 			padding: 0 15px;
 		}
 	}
+
 	&__form {
 		display: flex;
 		align-items: center;
+
+		& > *:not(:last-child) {
+			margin-right: 20px;
+		}
 
 		@media (max-width: 1350px) {
 			width: 100%;
@@ -31,6 +35,7 @@
 
 	&__btn-back {
 		display: none;
+		flex-shrink: 0;
 
 		svg {
 			width: 24px;
@@ -41,14 +46,11 @@
 
 		@media (max-width: 1350px) {
 			display: block;
-			// width: 20px;
-			// height: 20px;
 		}
 	}
 
 	&__form-control {
 		height: 42px;
-		margin: 0 15px;
 
 		@media (max-width: $sm) {
 			height: 30px !important;
@@ -57,5 +59,6 @@
 	}
 
 	&__btn-search {
+		flex-shrink: 0;
 	}
 }

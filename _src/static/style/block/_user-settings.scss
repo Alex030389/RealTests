@@ -1,0 +1,55 @@
+.user-settings {
+	max-width: 464px;
+	margin: 0 auto;
+
+	&__tab {
+		padding-top: 20px;
+	}
+
+	&__wrap-btn-list {
+	}
+
+	&__btn-list {
+		padding: 0;
+	}
+
+	&__tab-btn {
+		padding-right: 23px;
+		padding-left: 23px;
+		&:first-child {
+			margin-right: 0;
+		}
+	}
+
+	&__content-list {
+		padding: 35px 5px;
+
+		@media (max-width: $sm) {
+			padding: 14p 0 0;
+		}
+	}
+
+	&__current-email {
+		margin-bottom: 23px;
+		padding-top: 8px;
+
+		text-align: center;
+	}
+
+	&__box-checkbox {
+		margin-bottom: 37px;
+		padding-top: 3px;
+
+		@media (max-width: $sm) {
+			margin-bottom: 23px;
+		}
+
+		&:last-of-type {
+			margin-bottom: 46px;
+
+			@media (max-width: $sm) {
+				margin-bottom: 24px;
+			}
+		}
+	}
+}

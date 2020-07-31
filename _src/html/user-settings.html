@@ -1,0 +1,127 @@
+@@include('block/_head.html')
+@@include('block/header/_header.html')
+
+<main class="main" style="display: flex; flex-direction: column;">
+	@@include('block/_breadcrumb.html')
+	<section class="user-account">
+		<div class="user-account__container container">
+			<nav class="user-account__nav">
+				<ul class="user-account__menu d-lg-none">
+					<li class="user-account__menu-item">
+						<a class="user-account__menu-link" href="#">
+							<svg aria-hidden="true">
+								<use xlink:href="static/img/symbol/sprite.svg#products"></use>
+							</svg>
+							<span>My Products</span>
+						</a>
+					</li>
+					<li class="user-account__menu-item">
+						<a class="user-account__menu-link" href="#">
+							<svg aria-hidden="true">
+								<use xlink:href="static/img/symbol/sprite.svg#invoice"></use>
+							</svg>
+							<span>Order/Invoice</span>
+						</a>
+					</li>
+					<li class="user-account__menu-item">
+						<a class="user-account__menu-link _current" href="#">
+							<svg aria-hidden="true">
+								<use xlink:href="static/img/symbol/sprite.svg#settings"></use>
+							</svg>
+							<span>Account Settings</span>
+						</a>
+					</li>
+					<li class="user-account__menu-item _pl">
+						<a class="user-account__menu-link" href="#">
+							<span>Log Out</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="form-group d-none d-lg-block">
+					<label class="form-label" for="vendor">User Center</label>
+					<div class="select-wrap">
+						<select class="form-control _select" name="vendor" id="vendor">
+							<option value="1" selected>My Products</option>
+							<option value="2">Order/Invoice</option>
+							<option value="3">Account Settings</option>
+							<option value="4">Log Out</option>
+						</select>
+					</div><!--/select-wrap-->
+				</div>
+			</nav>
+
+			<div class="user-account__content">
+				<h1 class="visually-hidden">User settings</h1>
+				<div class="user-settings">
+					<div class="user-settings__tab tab">
+						<div class="user-settings__wrap-btn-list tab__wrap-btn-list">
+							<div class="user-settings__btn-list tab__btn-list _after-d-none">
+								<button class="user-settings__tab-btn tab__btn _active btn-reset" data-tab-btn="0">Email Natification</button>
+								<button class="user-settings__tab-btn tab__btn btn-reset" data-tab-btn="1">Email Address & Password</button>
+							</div>
+						</div>
+						<div class="user-settings__content-list tab__content-list">
+							<div class="tab__content" data-tab-content="0">
+								<form class="form" action="#">
+									<div class="user-settings__box-checkbox box-checkbox">
+										<input class="box-checkbox__form-control visually-hidden" type="checkbox" checked id="checkbox-1">
+										<label class="box-checkbox__form-label" for="checkbox-1"> Include me in the Realtests mailing list.</label>
+									</div>
+									<div class="user-settings__box-checkbox box-checkbox">
+										<input class="box-checkbox__form-control visually-hidden" type="checkbox" id="checkbox-2">
+										<label class="box-checkbox__form-label" for="checkbox-2">I want to be notified when my products have been updated.</label>
+									</div>
+									<div class="user-settings__box-checkbox box-checkbox">
+										<input class="box-checkbox__form-control visually-hidden" type="checkbox" id="checkbox-3">
+										<label class="box-checkbox__form-label" for="checkbox-3">I want to receive special offers from Realtests partners.</label>
+									</div>
+									<button class="form-btn btn-reset btn _primary _h_lg _w_100">Save</button>
+								</form>
+							</div><!--/tab__content-->
+
+							<div class="tab__content" data-tab-content="1">
+								<form class="form" action="#">
+									<p class="user-settings__current-email">Current Email Address: joenash01@gmail.com</p>
+									<div class="form-group _mb_md">
+										<label class="form-label" for="email-2">Email</label>
+										<input class="form-control" id="email-2" type="text" placeholder="Email">
+									</div>
+									<div class="form-group _mb_md">
+										<label class="form-label" for="password-2">Password</label>
+										<div class="password-wrap">
+											<input class="password-wrap__form-control form-control" id="password-2" type="password" placeholder="Password">
+											<button class="password-wrap__btn btn btn-reset" data-btn="show-password" type="button" aria-label="show password">
+												<svg aria-hidden="true">
+													<use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="form-group _mb_xl">
+										<label class="form-label" for="password-3">Confirm Password</label>
+										<div class="password-wrap">
+											<input class="password-wrap__form-control form-control" id="password-3" type="password" placeholder="Confirm Password">
+											<button class="password-wrap__btn btn btn-reset" data-btn="show-password" type="button" aria-label="show password">
+												<svg aria-hidden="true">
+													<use xlink:href="static/img/symbol/sprite.svg#eye"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="form-group">
+										<button class="form-btn btn-reset btn _primary _h_lg _w_100">Save</button>
+									</div>
+								</form>
+							</div><!--/tab__content-->
+						</div><!--/tab__content-list-->
+					</div><!--/tab-->
+				</div><!--/container-->
+			</div><!--/user-account__content-->			
+		</div><!--/container-->
+	</section>
+</main>
+
+@@include('block/footer/_footer.html')
+@@include('block/modal/_modal.html')
+@@include('block/_scripts.html')
