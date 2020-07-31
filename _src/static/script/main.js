@@ -5,18 +5,10 @@ svg4everybody();
 // polifill
 objectFitImages();
 
-$(window).resize(function() {
-if($('.header__box-m-btn').is(':hidden')) {
-		// _hamburger.js
-		closeMobMenu()		
-	}
-});
-
 // ///////////////////////////////////// style
 $('button	').on('click', function() {
 	$(this).blur();
 });
-
 
 $('select').on('change', function (){
 	let color = $(this).find('option').css('color');
@@ -25,7 +17,10 @@ $('select').on('change', function (){
 
 $('.all-vendors__letter').prev(".all-vendors__wrap-link").css({"margin-bottom": "23px"});
 
+// block
 @@include('block/_hamburger.js')
+@@include('block/_mobile-sub-nav.js')
+@@include('block/_header-search.js')
 @@include('block/_tab.js')
 @@include('block/_slider.js')
 @@include('block/_show-password.js')

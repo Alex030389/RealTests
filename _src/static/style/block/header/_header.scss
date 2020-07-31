@@ -66,6 +66,20 @@
 		}
 	}
 
+	&__search {
+		position: absolute;
+		top: 100%;
+		right: 10%;
+		z-index: 500;
+
+		display: none;
+
+		@media (max-width: 1350px) {
+			top: 0;
+			left: 0;
+		}
+	}
+
 	&__main-m-nav {
 		position: fixed;
 		top: 0;

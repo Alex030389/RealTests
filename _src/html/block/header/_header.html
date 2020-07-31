@@ -6,7 +6,7 @@
 					<use xlink:href="static/img/symbol/sprite.svg#hamburger"></use>
 				</svg>
 			</button>
-			<button class="header__m-btn btn-reset" aria-label="open search">
+			<button class="header__m-btn btn-reset" aria-label="open search" data-btn="open-search">
 				<svg class="header__icon" aria-hidden="true">
 					<use xlink:href="static/img/symbol/sprite.svg#search"></use>
 				</svg>
@@ -97,7 +97,7 @@
 		</nav>
 		<ul class="header__user-menu user-menu">
 			<li class="user-menu__item">
-				<button class="user-menu__btn btn-reset" aria-label="button search">
+				<button class="user-menu__btn btn-reset" aria-label="open search" data-btn="open-search">
 					<svg class="header__icon" aria-hidden="true">
 						<use xlink:href="static/img/symbol/sprite.svg#search"></use>
 					</svg>
@@ -118,6 +118,19 @@
 				<a class="user-menu__btn _border link-reset" href="#">Sign up</a>
 			</li>
 		</ul>
+		<div class="header__search main-search" data-js="main-search">
+			<div class="main-search__inner">
+				<form class="main-search__form" action="#">
+					<button class="main-search__btn-back btn-reset" data-btn="search-close" type="button" aria-label="button close search">
+						<svg aria-hidden="true">
+							<use xlink:href="static/img/symbol/sprite.svg#arrow-large"></use>
+						</svg>
+					</button>
+					<input class="main-search__form-control form-control _h_sm" type="text" data-js="main-search-input">
+					<button class="main-search__btn-search btn-reset btn">Search</button>
+				</form>
+			</div>
+		</div>
 		<div class="header__box-m-btn">
 			<a class="header__m-btn" href="#" aria-label="cart link">
 				<svg class="header__icon" aria-hidden="true">
@@ -141,14 +154,17 @@
 				</svg>
 			</button>
 			<ul class="main-m-nav__list" data-nav="main-m-list">
-				<li class="main-m-nav__item _dropdown" >
-					<a class="main-m-nav__link" href="#">
+				<li class="main-m-nav__item" >
+					<button class="main-m-nav__link btn-reset" href="#" data-btn="open-m-sub-nav">
 						<span>Products</span>
 						<svg class="main-m-nav__arrow arrow-dropdown" aria-hidden="true">
 							<use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
 						</svg>	
-					</a>
-					<ul class="main-m-nav__sub-nav sub-m-nav">
+					</button>
+					<ul class="main-m-nav__sub-nav sub-m-nav" data-nav="sub-m-nav">
+						<li class="sub-m-nav__item">
+							<a class="sub-m-nav__link link" href="#">All products</a>
+						</li>
 						<li class="sub-m-nav__item">
 							<a class="sub-m-nav__link link" href="#">Adobe</a>
 						</li>

@@ -46,6 +46,12 @@
 		&:hover {
 			color: #1273eb;
 		}
+
+		&._active {
+			.arrow-dropdown {
+				transform: rotate(180deg);
+			}
+		}
 	}
 
 	&__arrow {
