@@ -21,6 +21,6 @@ $('body').mouseup(function(even) {
   }
 });
 
-$(window).resize(function() {
-	$('[data-js="main-search"]').hide();
-});
+// $(window).resize(function() {
+// 	$('[data-js="main-search"]').hide();
+// });
