@@ -37,6 +37,7 @@
 		font-weight: 400;
 		color: #6e6d7a;
 		letter-spacing: .02em;
+		padding-bottom: 15px;
 	}
 
 	&__td {
@@ -49,5 +50,9 @@
 		font-size: 14px;
 		line-height: 17px;
 		color: #ff2e00;
+
+		&._ta_center {
+			text-align: center;
+		}
 	}
 }

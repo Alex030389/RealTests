@@ -3,9 +3,11 @@
 
 	&__container {
 		display: flex;
+		min-height: 550px;
 
-		@media (max-width: $lg) {
+		@media (max-width: $xl) {
 			flex-direction: column;
+			min-height: auto;
 		}
 	}
 
@@ -17,7 +19,12 @@
 
 		border-right: 1px solid #cfd9e0;
 
-		@media (max-width: $lg) {
+		@media (max-width: 1500px) {
+			padding: 72px 25px 72px 0;
+			width: 250px;
+		}
+
+		@media (max-width: $xl) {
 			width: 100%;
 			max-width: 464px;
 			margin: 0 auto;
@@ -27,7 +34,7 @@
 		}
 
 		@media (max-width: $sm) {
-			padding-top: 20px;
+			padding-top: 13px;
 		}
 	}
 
@@ -85,14 +92,27 @@
 	// /////////////////////////////////////////////// content
 	&__content {
 		flex-grow: 1;
-		padding: 32px;
+		padding: 38px 32px 44px;
 
 		@media (max-width: $lg) {
-			padding: 32px 0 32px;
-		}
-
-		@media (max-width: $sm) {
-			padding-top: 15px;
+			padding: 38px 0 44px;
 		}
 	}
+
+	&__s {
+		&:not(:last-child) {
+			margin-bottom: 55px;
+
+			@media (max-width: $md) {
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 16px;
+    @media (max-width: $sm) {
+      margin-bottom: 16px;
+    }
+  }
 }

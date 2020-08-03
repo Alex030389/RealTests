@@ -256,7 +256,7 @@
 </header>
 
 
-<main class="main">
+<main class="main" style="display: flex; flex-direction: column;">
 	<ul class="breadcrumb">
 	<li class="breadcrumb__item">
 		<a class="breadcrumb__link" href="#">Home</a>
@@ -266,130 +266,294 @@
 	</li>
 	<li class="breadcrumb__item _current">220-1001</li>
 </ul>
+	<div class="user-account">
+		<div class="user-account__container container">
+			<nav class="user-account__nav">
+				<ul class="user-account__menu d-xl-none">
+					<li class="user-account__menu-item">
+						<a class="user-account__menu-link _current" href="#">
+							<svg aria-hidden="true">
+								<use xlink:href="static/img/symbol/sprite.svg#products"></use>
+							</svg>
+							<span>My Products</span>
+						</a>
+					</li>
+					<li class="user-account__menu-item">
+						<a class="user-account__menu-link" href="#">
+							<svg aria-hidden="true">
+								<use xlink:href="static/img/symbol/sprite.svg#invoice"></use>
+							</svg>
+							<span>Order/Invoice</span>
+						</a>
+					</li>
+					<li class="user-account__menu-item">
+						<a class="user-account__menu-link" href="#">
+							<svg aria-hidden="true">
+								<use xlink:href="static/img/symbol/sprite.svg#settings"></use>
+							</svg>
+							<span>Account Settings</span>
+						</a>
+					</li>
+					<li class="user-account__menu-item _pl">
+						<a class="user-account__menu-link" href="#">
+							<span>Log Out</span>
+						</a>
+					</li>
+				</ul>
 
-	<!-- ////////////////////////////////////////////////////////// exam -->
-	<section class="partnership">
-		<div class="container">
-			<h1 class="visually-hidden">Partnership</h1>
-			<div class="partnership__row">
-				<div class="partnership__col">
-					<div class="partnership__box box-style">
-						<h2 class="partnership__title">Licensing for Institutes/Corporate</h2>
-						<ul class="list">
-							<li class="list__item">Access Unlimited RealTests Products</li>
-							<li class="list__item">Get highest discounts</li>
-							<li class="list__item">3 months, 6 months and 1 Year Testing Engine Access Options</li>
-							<li class="list__item">Personalized Customer Support</li>
-						</ul>
-					</div><!--/partnership__box-->
-				</div><!--/col-->
-				<div class="partnership__col">
-					<div class="partnership__box box-style">
-						<h2 class="partnership__title">RealTests Reseller Program</h2>
-						<ul class="list">
-							<li class="list__item">Institutes/trainers sell RealTests Products to students</li>
-							<li class="list__item">Earn 25% commission on all RealTests Sales</li>
-							<li class="list__item">Assign Unlimited Products to users anytime</li>
-						</ul>
-					</div><!--/partnership__box-->
-				</div><!--/col-->
-				<div class="partnership__col">
-					<div class="partnership__box box-style">
-						<h2 class="partnership__title">RealTests Affiliate</h2>
-						<ul class="list">
-							<li class="list__item">Simple & Easy for Webmasters</li>
-							<li class="list__item">Add link to RealTests website</li>
-							<li class="list__item">Send Traffic to RealTests</li>
-							<li class="list__item">Earn Commission on Sales</li>
-							<li class="list__item">Get Paid as you like</li>
-						</ul>
-					</div><!--/partnership__box-->
-				</div><!--/col-->
-				<div class="partnership__col _large">
-					<div class="partnership__box _large">
-						<form class="form" action="#">
-							<h2 class="partnership__title-2">Please fill out your information below and Certkiller Partner Program Manager will get back to you with best solution according to your requirements.</h2>
-							<div class="form__row _space_sm _mb_lg">
-								<div class="form__col _space_sm _2 form-group _mb_md">
-									<label class="form-label" for="email">Contact Name*</label>
-									<input class="form-control" id="email" type="text" placeholder="Contact Name">
-								</div>
-								<div class="form__col _space_sm _2 form-group _mb_md">
-									<label class="form-label" for="email">Email Address*</label>
-									<input class="form-control" id="email" type="text" placeholder="Email Address">
-								</div>
-								<div class="form__col _space_sm _2 form-group _mb_md">
-									<label class="form-label" for="email">Country*</label>
-									<input class="form-control" id="email" type="text" placeholder="Country">
-								</div>
-								<div class="form__col _space_sm _2 form-group _mb_md">
-									<label class="form-label" for="email">Valid Phone Number*</label>
-									<input class="form-control" id="email" type="text" placeholder="Valid Phone Number">
-								</div>
-								<div class="form__col _space_sm _2 form-group _mb_md">
-									<label class="form-label" for="email">Company Name</label>
-									<input class="form-control" id="email" type="text" placeholder="Company Name">
-								</div>
-								<div class="form__col _space_sm _2 form-group _mb_md">
-									<label class="form-label" for="email">Web Site URL</label>
-									<input class="form-control" id="email" type="text" placeholder="Web Site URL">
-								</div>
-							</div><!--form__row-->
-							<h2 class="partnership__title-2">Tell us about your requirements:</h2>
-							<div class="form__row">
-								<div class="form__col form-group _mb_md">
-									<label class="form-label" for="vendor">I would like more information on</label>
-									<div class="select-wrap">
-										<select class="form-control _select" name="vendor" id="vendor">
-											<option value="" disabled selected hidden>Please Choose...</option>
-											<option value="Licensing">Licensing</option>
-											<option value="Reseller">Reseller</option>
-											<option value="Affiliate">Affiliate</option>
-											<option value="Multiple_Accounts">Multiple User Accounts</option>
-										</select>
-									</div><!--/select-wrap-->
-								</div>
-								<div class="form__col form-group _mb_md">
-									<label class="form-label" for="exam">Additional Comments</label>
-									<textarea class="form-control _textarea" rows="4" placeholder="Please add comments about your requirements regarding Realtests products."></textarea>
-								</div>
-								<div class="form__col form-group _mb_xl">
-									<label class="form-label" for="email">Security Code*</label>
-									<div class="security-code">
-										<div class="security-code__form-control-box">
-											<input class="security-code__form-control form-control" id="email" type="text" placeholder="Code">
-											<img class="security-code__img" src="static/img/ui/code.png" alt="code">
-										</div>
-										<span class="security-code__info d-sm-none">Please enter security code exactly as shown.</span>	
-									</div><!--/security-code-->
-								</div>
-								<div class="form__col form-group">
-									<button class="partnership__btn btn-reset btn _primary _h_lg">Submit Now</button>
-								</div>
-							</div><!--form__row-->
-						</form>
-						
-					</div><!--/partnership__box-->
-				</div><!--/col-->
-				<div class="partnership__col">
-					<div class="partnership__box _h_auto box-style">
-						<h2 class="partnership__title">Why Choose RealTests?</h2>
-						<ul class="list">
-							<li class="list__item">1283 Satisfied Licensors</li>
-							<li class="list__item">100% Success Guarantee</li>
-							<li class="list__item">Money secured by Refund Policy</li>
-							<li class="list__item">Flexible Testing Engine Access</li>
-						</ul>
-						<div class="partnership__text">
-							<p>There are many ways you can partner with RealTests and develop new personal revenue streams, promote popular or favorite products, or simply save time and money for your company with licensed solutions.</p>
-							<p>RealTests is more than a provider of certification exam training materials, we can also assist you in developing a preparation plan for your IT professionals on staff. Grow your existing certified team of coworkers into a work force that will elevate your business as they develop.</p>
-						</div>
-					</div><!--/partnership__box-->
-				</div><!--/col-->
-			</div><!--/partnership__content-->
-		</div><!--/containe-->
-	</section>
+				<div class="form-group d-none d-xl-block">
+					<label class="form-label" for="vendor">User Center</label>
+					<div class="select-wrap">
+						<select class="form-control _select" name="vendor" id="vendor">
+							<option value="1" selected>My Products</option>
+							<option value="2">Order/Invoice</option>
+							<option value="3">Account Settings</option>
+							<option value="4">Log Out</option>
+						</select>
+					</div><!--/select-wrap-->
+				</div>
+			</nav>
 
+			<div class="user-account__content">
+				<h1 class="visually-hidden">User products</h1>
+				<section class="user-account__s">
+					<h2 class="user-account__title title _fz_36 _ta_center">Current Products</h2>
+					<table class="table table-user-products">
+						<thead>
+							<tr>
+								<th>Product Description</th>
+								<th>Invoice #</th>
+								<th>Order Date</th>
+								<th>Expiration Date</th>
+								<th></th>
+								<th>Download / Extend</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a href="#" style="font-size: 18px; line-height: 22px;">1. Fortinet NSE7_EFW-6.2 Questions & Answers</a>
+									<div class="table-user-products__code d-md-none">
+										<span class="table-user-products__code-desc">Authorization Code #1:</span>
+										<input class="table-user-products__form-control form-control" type="text" readonly
+										value="2124-7799-9540-723D">
+									</div>
+									<div class="table-user-products__code d-md-none">
+										<span class="table-user-products__code-desc">Authorization Code #2:</span>
+										<button class="table-user-products__btn-request btn-reset btn _border-primary">Request Code</button>
+									</div>
+								</td>
+								<td>
+									<span class="table-user-invoice__desc">Invoice:</span>
+									<span><a class="link" href="#">140852</a></span>
+								</td>
+								<td>
+									<span class="table-user-invoice__desc">Order Date:</span>
+									<span>Jun 05, 20</span>
+								</td>
+								<td>
+									<span class="table-user-invoice__desc">Expiration Date:</span>
+									<span>Sep 03, 20</span>
+								</td>
+								<td class="table-user-products__td-code">
+									<div class="table-user-products__code">
+										<span class="table-user-products__code-desc">Authorization Code #1:</span>
+										<input class="table-user-products__form-control form-control" type="text" readonly
+										value="2124-7799-9540-723D">
+									</div>
+									<div class="table-user-products__code">
+										<span class="table-user-products__code-desc">Authorization Code #2:</span>
+										<button class="table-user-products__btn-request btn-reset btn _border-primary">Request Code</button>
+									</div>
+								</td>
+								<td>
+									<div class="table-user-products__box-btn-info">
+										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+										<button class="table-user-products__btn btn-reset btn _border-primary">Extend</button>
+										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section><!--/user-invoice-->
+
+				<section class="user-account__s">
+					<h2 class="user-account__title title _fz_36 _ta_center">Expired Products</h2>
+					<table class="table table-user-products">
+						<thead>
+							<tr>
+								<th>Product Description</th>
+								<th>Invoice #</th>
+								<th>Order Date</th>
+								<th>Expiration Date</th>
+								<th></th>
+								<th>Download / Extend</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a class="" href="#">Fortinet NSE7_EFW-6.2 Questions & Answers</a>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Invoice:</span>
+									<span><a class="link" href="#">140852</a></span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Order Date:</span>
+									<span>Jun 05, 20</span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Expiration Date:</span>
+									<span>Sep 03, 20</span>
+								</td>
+								<td>
+
+								</td>
+								<td>
+									<div class="table-user-products__box-btn-info">
+										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a class="" href="#">Fortinet NSE7_EFW-6.2 Questions & Answers</a>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Invoice:</span>
+									<span><a class="link" href="#">140852</a></span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Order Date:</span>
+									<span>Jun 05, 20</span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Expiration Date:</span>
+									<span>Sep 03, 20</span>
+								</td>
+								<td>
+
+								</td>
+								<td>
+									<div class="table-user-products__box-btn-info">
+										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a class="" href="#">Fortinet NSE7_EFW-6.2 Questions & Answers</a>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Invoice:</span>
+									<span><a class="link" href="#">140852</a></span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Order Date:</span>
+									<span>Jun 05, 20</span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Expiration Date:</span>
+									<span>Sep 03, 20</span>
+								</td>
+								<td>
+
+								</td>
+								<td>
+									<div class="table-user-products__box-btn-info">
+										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a class="" href="#">Fortinet NSE7_EFW-6.2 Questions & Answers</a>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Invoice:</span>
+									<span><a class="link" href="#">140852</a></span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Order Date:</span>
+									<span>Jun 05, 20</span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Expiration Date:</span>
+									<span>Sep 03, 20</span>
+								</td>
+								<td>
+
+								</td>
+								<td>
+									<div class="table-user-products__box-btn-info">
+										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a class="" href="#">Fortinet NSE7_EFW-6.2 Questions & Answers</a>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Invoice:</span>
+									<span><a class="link" href="#">140852</a></span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Order Date:</span>
+									<span>Jun 05, 20</span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Expiration Date:</span>
+									<span>Sep 03, 20</span>
+								</td>
+								<td>
+
+								</td>
+								<td>
+									<div class="table-user-products__box-btn-info">
+										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a class="" href="#">Fortinet NSE7_EFW-6.2 Questions & Answers</a>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Invoice:</span>
+									<span><a class="link" href="#">140852</a></span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Order Date:</span>
+									<span>Jun 05, 20</span>
+								</td>
+								<td class="table__td">
+									<span class="table-user-invoice__desc">Expiration Date:</span>
+									<span>Sep 03, 20</span>
+								</td>
+								<td>
+
+								</td>
+								<td>
+									<div class="table-user-products__box-btn-info">
+										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section><!--/user-invoice-->
+			</div><!--/user-account__content-->
+		</div><!--/container-->
+	</div>
 </main>
 
 <footer class="footer">
@@ -440,3 +604,4 @@
 	<script src="static/js/main.min.js"></script>
 </body>
 </html>
+

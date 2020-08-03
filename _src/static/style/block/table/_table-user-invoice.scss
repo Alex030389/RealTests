@@ -1,0 +1,108 @@
+.table-user-invoice {
+
+  tr {
+		@media (max-width: $md) {
+      display: block;
+		}
+	}
+
+  th,
+	td {
+		&:nth-child(1) {
+      width: 270px;
+
+      @media (max-width: $xl) {
+        width: 220px;
+      }
+
+      @media (max-width: $md) {
+        width: 100%;
+        padding-bottom: 5px;
+      }
+		}
+
+		&:nth-child(2) {
+      text-align: center;
+      @media (max-width: $md) {
+        text-align: left;
+        padding-bottom: 5px;
+        padding-top: 5px;
+     }
+		}
+
+		&:nth-child(3) {
+      text-align: center;
+      @media (max-width: $md) {
+        text-align: left;
+        padding-bottom: 5px;
+        padding-top: 5px;
+      }
+		}
+
+		&:nth-child(4) {
+      width: 272px;
+
+      @media (max-width: $xl) {
+        width: 140px;
+      }
+      @media (max-width: $md) {
+        width: 100%;
+        padding-top: 12px;
+      }
+    }
+
+    @media (max-width: $md) {
+      display: inline-block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  &__box-btn {
+    display: flex;
+
+    @media (max-width: $xl) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $md) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    height: 32px;
+    max-width: 200px;
+
+    @media (max-width: $md) {
+      margin-right: 8;
+      margin-bottom: 0;
+      height: 48px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 12px;
+
+      @media (max-width: $xl) {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+
+      @media (max-width: $md) {
+        margin-right: 8px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__desc {
+    color: #6E6D7A;
+    display: none;
+
+    @media (max-width: $md) {
+      display: inline;
+    }
+  }
+}

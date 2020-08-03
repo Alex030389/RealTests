@@ -1,0 +1,255 @@
+@@include('block/_head.html')
+@@include('block/header/_header.html')
+
+<main class="main" style="display: flex; flex-direction: column;">
+	@@include('block/_breadcrumb.html')
+	<section class="user-account">
+		<div class="user-account__container container">
+			<nav class="user-account__nav">
+				<ul class="user-account__menu d-xl-none">
+					<li class="user-account__menu-item">
+						<a class="user-account__menu-link" href="#">
+							<svg aria-hidden="true">
+								<use xlink:href="static/img/symbol/sprite.svg#products"></use>
+							</svg>
+							<span>My Products</span>
+						</a>
+					</li>
+					<li class="user-account__menu-item">
+						<a class="user-account__menu-link _current" href="#">
+							<svg aria-hidden="true">
+								<use xlink:href="static/img/symbol/sprite.svg#invoice"></use>
+							</svg>
+							<span>Order/Invoice</span>
+						</a>
+					</li>
+					<li class="user-account__menu-item">
+						<a class="user-account__menu-link" href="#">
+							<svg aria-hidden="true">
+								<use xlink:href="static/img/symbol/sprite.svg#settings"></use>
+							</svg>
+							<span>Account Settings</span>
+						</a>
+					</li>
+					<li class="user-account__menu-item _pl">
+						<a class="user-account__menu-link" href="#">
+							<span>Log Out</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="form-group d-none d-xl-block">
+					<label class="form-label" for="vendor">User Center</label>
+					<div class="select-wrap">
+						<select class="form-control _select" name="vendor" id="vendor">
+							<option value="1" selected>My Products</option>
+							<option value="2">Order/Invoice</option>
+							<option value="3">Account Settings</option>
+							<option value="4">Log Out</option>
+						</select>
+					</div><!--/select-wrap-->
+				</div>
+			</nav>
+
+			<div class="user-account__content">
+				<h1 class="user-account__title title _fz_36 _ta_center">Order / Invoice</h1>
+				<table class="table table-user-invoice">
+					<thead>
+						<tr>
+							<th class="table__td">Invoice / Order</th>
+							<th class="table__td">Order Date</th>
+							<th class="table__td">Amount</th>
+							<th class=""></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								24911<span class="d-md-none"> / 201909050000024911</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								Jun 05, 20
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								$ 69.99
+							</td>
+							<td>
+								<div class="table-user-invoice__box-btn">
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">View</button>
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">Print</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								24911<span class="d-md-none"> / 201909050000024911</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								Jun 05, 20
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								$ 69.99
+							</td>
+							<td>
+								<div class="table-user-invoice__box-btn">
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">View</button>
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">Print</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								24911<span class="d-md-none"> / 201909050000024911</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								Jun 05, 20
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								$ 69.99
+							</td>
+							<td class="">
+								<div class="table-user-invoice__box-btn">
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">View</button>
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">Print</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								24911<span class="d-md-none"> / 201909050000024911</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								Jun 05, 20
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								$ 69.99
+							</td>
+							<td class="">
+								<div class="table-user-invoice__box-btn">
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">View</button>
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">Print</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								24911<span class="d-md-none"> / 201909050000024911</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								Jun 05, 20
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								$ 69.99
+							</td>
+							<td class="">
+								<div class="table-user-invoice__box-btn">
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">View</button>
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">Print</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								24911<span class="d-md-none"> / 201909050000024911</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								Jun 05, 20
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								$ 69.99
+							</td>
+							<td class="">
+								<div class="table-user-invoice__box-btn">
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">View</button>
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">Print</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								24911<span class="d-md-none"> / 201909050000024911</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								Jun 05, 20
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								$ 69.99
+							</td>
+							<td class="">
+								<div class="table-user-invoice__box-btn">
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">View</button>
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">Print</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								24911<span class="d-md-none"> / 201909050000024911</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								Jun 05, 20
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								$ 69.99
+							</td>
+							<td class="">
+								<div class="table-user-invoice__box-btn">
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">View</button>
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">Print</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								24911<span class="d-md-none"> / 201909050000024911</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								Jun 05, 20
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								$ 69.99
+							</td>
+							<td class="">
+								<div class="table-user-invoice__box-btn">
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">View</button>
+									<button class="table-user-invoice__btn btn-reset btn _border-primary">Print</button>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div><!--/user-account__content-->
+		</div><!--/container-->
+	</section>
+</main>
+
+@@include('block/footer/_footer.html')
+@@include('block/modal/_modal.html')
+@@include('block/_scripts.html')
