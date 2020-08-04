@@ -20,12 +20,12 @@
 	<h1>RealTests</h1>
 	<hr>
 	<h2>MODALS</h2>
-	<!-- <button style="margin: 8px">start-1</button>
-	<button style="margin: 8px">start-2</button>
-	<button style="margin: 8px">download demo</button>
-	<button style="margin: 8px">100% pass guarantee</button>
-	<button style="margin: 8px">need help with your purchase?</button>
-	<button style="margin: 8px">what is this</button> -->
+	<button class="btn-modal" style="margin: 8px" data-mfp-src="#get-discount">get discount</button>
+	<button class="btn-modal" style="margin: 8px" data-mfp-src="#use-code">use code</button>
+	<button class="btn-modal" style="margin: 8px" data-mfp-src="#download-demo">download demo</button>
+	<button class="btn-modal" style="margin: 8px" data-mfp-src="#pass-guarantee">100% pass guarantee</button>
+	<button class="btn-modal" style="margin: 8px" data-mfp-src="#need-help">need help with your purchase?</button>
+	<button class="btn-modal" style="margin: 8px" data-mfp-src="#what-is-this">what is this</button>
 	<hr>
 	<h2>PAGES</h2>
 	<ol>
@@ -90,10 +90,99 @@
 	</ol>
 </div>
 
-<div class="modal">
-</div>
+<div class="modal mfp-hide" id="get-discount">
+  <div class="modal__header">
+    <h2 class="modal__title">Get 20% Discount on Your Purchase When You Sign Up for Email</h2>
+    <button class="modal__btn-close btn-reset">
+      <svg class="icon-close" aria-hidden="true">
+        <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </div><!--/modal__header-->
+  <div class="modal__body">
+    <div class="discount">
+      <div class="discount__img-box">
+        <p class="discount__title">
+          <span>Instant Discount</span>
+          <span>20% OFF</span>
+        </p>
+        <img class="discount__img" src="static/img/course/course.png" alt="book">
+      </div>
+      <div class="discount__content">
+        <p class="discount__p">Enter Your Email Address to Receive Your <span>20% OFF</span> Discount Code Plus... Our Exclusive Weekly Deals</p>
+        <form class="discount__form"  action="#">
+          <input class="discount__form-control form-control" type="text" placeholder="Email Address">
+          <button class="discount__btn btn-reset btn _primary _h_lg">Get Your Discount Code</button>
+        </form>
+      </div><!--/discount__content-->
+    </div><!--/discount-->
+    <p class="modal__bottom-text">* We value your privacy. We will not rent or sell your email address</p>
+  </div><!--/modal__body-->
+</div><!--modal-->
+
+<div class="modal mfp-hide" id="use-code">
+  <div class="modal__header">
+    <h2 class="modal__title">Instant Discount 20% OFF</h2>
+    <button class="modal__btn-close btn-reset">
+      <svg class="icon-close" aria-hidden="true">
+        <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </div><!--/modal__header-->
+  <div class="modal__body">
+    <div class="discount">
+      <div class="discount__img-box">
+        <img class="discount__img" src="static/img/course/course.png" alt="book">
+      </div>
+      <div class="discount__content use-code">
+        <p class="discount__p">
+          Save 20% Today on all IT exams. Instant Download<br>
+          Use Discount Code:
+        </p>
+        <form class="use-code__form"  action="#">
+          <div class="use-code__form-group-btn form-group-btn">
+            <input class="form-group-btn__form-control form-control" type="text" readonly value="CERT20OFF">
+            <button class="form-group-btn__btn btn-reset btn _primary">Copy</button>
+          </div>
+        </form>
+        <a class="discount__link link" href="#">Shop Now</a>
+      </div><!--/discount__content-->
+    </div><!--/discount-->
+  </div><!--/modal__body-->
+</div><!--modal-->
+
+<div class="modal _mw_sm mfp-hide" id="download-demo">
+  <div class="modal__header">
+    <h2 class="modal__title">Download Free CompTIA 220-1001 Demo</h2>
+    <button class="modal__btn-close btn-reset">
+      <svg class="icon-close" aria-hidden="true">
+        <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </div><!--/modal__header-->
+  <div class="modal__body">
+    <div class="mod-downl-dem">
+      <p class="mod-downl-dem__p">Experience Realtests exam testing engine for yourself.</p>
+      <p class="mod-downl-dem__p">Simply submit your e-mail address below to get started with our interactive software demo of your CompTIA 220-1001 exam.</p>
+      <ul class="mod-downl-dem__list list">
+        <li class="list__item">Customizable, interactive testing engine</li>
+        <li class="list__item">Simulates real exam environment</li>
+        <li class="list__item">Instant download</li>
+      </ul>
+      <form class="mod-downl-dem__form"  action="#">
+        <div class="mod-downl-dem__form-group-btn form-group-btn">
+          <input class="form-group-btn__form-control form-control" type="text" placeholder="Email Address">
+          <button class="form-group-btn__btn btn-reset btn _primary">Try Free Demo</button>
+        </div>
+        <span class="mod-downl-dem__info">You will use this to log in to your account</span>
+      </form>
+    </div>
+    <p class="modal__bottom-text">* Our demo shows only a few questions from CompTIA 220-1001 exam for evaluating purposes</p>
+  </div><!--/modal__body-->
+</div><!--modal-->
 
 	<script src="static/js/libs.min.js"></script>
 	<script src="static/js/main.min.js"></script>
 </body>
 </html>
+

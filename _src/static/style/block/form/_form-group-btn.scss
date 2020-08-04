@@ -1,0 +1,15 @@
+.form-group-btn {
+	display: flex;
+	width: 100%;
+
+	&__form-control {
+		padding-right: 30px;
+	}
+
+	&__btn {
+		display: block;
+		height: inherit;
+		margin-left: -10px;
+		padding: 0 28px;
+	}
+}

@@ -1,0 +1,32 @@
+.mod-downl-dem {
+	font-size: 18px;
+	color: #6e6d7a;
+
+	&__p {
+		margin-bottom: 10px;
+
+		&:last-of-type {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__list {
+		margin-bottom: 30px;
+	}
+
+	&__form {
+		margin-bottom: 15px;
+	}
+
+	&__form-group-btn {
+		margin-bottom: 8px;
+	}
+
+	&__info {
+		display: block;
+
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+	}
+}
