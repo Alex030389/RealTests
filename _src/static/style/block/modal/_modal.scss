@@ -10,6 +10,10 @@
 	border-radius: 40px;
 	box-shadow: 0 6.66307px 66.6307px rgba(0, 0, 0, .08);
 
+	@media (max-width: $sm) {
+		border-radius: 15px;
+	}
+
 	&._mw_sm {
 		max-width: 580px;
 	}
