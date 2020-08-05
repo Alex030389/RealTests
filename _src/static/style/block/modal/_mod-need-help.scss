@@ -1,0 +1,39 @@
+.mod-need-help {
+	&__list {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	&__item {
+		margin-top: -1px;
+
+		border: 1px solid #f2f2f3;
+	}
+
+	&__btn {
+		width: 100%;
+		padding: 10px 20px;
+
+		font-weight: 600;
+		font-size: 18px;
+		text-align: left;
+		white-space: normal;
+
+		background-color: #f9f9f9;
+
+		transition: .3s;
+
+		&:hover {
+			background-color: #f4f4f4;
+		}
+	}
+
+	&__text {
+		display: none;
+		padding: 10px 20px;
+	}
+
+	&__list {
+		font-size: 16px;
+	}
+}

@@ -17,17 +17,16 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 15px;
+		margin-bottom: 14px;
 	}
 
 	&__link {
+		font-size: 18px;
+		line-height: 24px;
+
 		@media (max-width: $sm) {
 			font-size: 12px;
-		}
-		&:hover {
-			color: #293741;
-
-			border-bottom: 1px solid rgba(41, 55, 65, .4);
+			line-height: 15px;
 		}
 	}
 }

@@ -131,12 +131,15 @@
 	}
 
 	&__title {
-		margin-bottom: 16px;
+		margin-bottom: 14px;
 	}
 
 	&__link {
+		font-size: 18px;
+		line-height: 24px;
+
 		&:not(:last-child) {
-			margin-bottom: 13px;
+			margin-bottom: 8px;
 		}
 
 		@media (max-width: $sm) {

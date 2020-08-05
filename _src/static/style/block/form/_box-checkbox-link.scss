@@ -15,9 +15,10 @@
 	}
 
 	&__link {
+		line-height: 19px;
 		@media (max-width: $sm) {
 			margin-bottom: 10px;
-			padding-top: 20px;
+			padding-top: 30px;
 		}
 	}
 }

@@ -94,10 +94,15 @@
 
 
 	&__link {
-		margin-bottom: 8px;
+		line-height: 22px;
+
 		@media (max-width: $sm) {
 			font-size: 16px;
 		}
+	}
+
+	&__info {
+		padding-top: 0;
 	}
 
 	&__del {

@@ -19,6 +19,14 @@ img {
 	max-width: 100%;
 }
 
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 // form style
 ::-webkit-input-placeholder {
 	color: inherit;

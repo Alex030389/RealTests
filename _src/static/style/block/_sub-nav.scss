@@ -1,7 +1,7 @@
 .sub-nav {
 	@extend .list-reset;
 
-	padding: 36px 63px 28px;
+	padding: 34px 63px 30px;
 
 	column-count: 3;
 	column-gap: 81px;
@@ -17,6 +17,7 @@
 
 	&__link {
 		font-size: 18px;
+		line-height: 24px;
 	}
 
 	&::before {

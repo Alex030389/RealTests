@@ -1,0 +1,9 @@
+.mod-what-is-this {
+	padding-bottom: 15px;
+	&__img {
+		margin: 0 auto;
+		&:not(:last-of-type) {
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -1,6 +1,4 @@
 .certific-list {
-	@extend .list-reset;
-
 	max-width: 1230px;
 	margin: 0 auto;
 
@@ -15,13 +13,11 @@
 		column-count: 1;
 	}
 
-	.link {
-		vertical-align: inherit;
-	}
-
 	&__item {
-		margin-bottom: 8px;
+		margin-bottom: 10px;
 
 		font-size: 18px;
+		line-height: 22px;
+		color: #6e6d7a;
 	}
 }

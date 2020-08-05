@@ -24,7 +24,7 @@
 						<tr>
 							<td class="table__td _ta_center">
 								<div class="select-wrap _sm">
-									<select class="form-control _select _h_sm" name="exam" id="exam">
+									<select class="form-control _select _h_sm" name="exam">
 										<option value="1">1-2 Computers</option>
 										<option value="2">3 Computers</option>
 										<option value="3">4 Computers</option>
@@ -48,7 +48,7 @@
 						<tr>
 							<td class="table__td _ta_center">
 								<div class="select-wrap _sm">
-									<select class="form-control _select _h_sm" name="exam" id="exam">
+									<select class="form-control _select _h_sm" name="exam">
 										<option value="1">1-2 Computers</option>
 										<option value="2">3 Computers</option>
 										<option value="3">4 Computers</option>
@@ -72,7 +72,7 @@
 						<tr>
 							<td class="table__td _ta_center">
 								<div class="select-wrap _sm">
-									<select class="form-control _select _h_sm" name="exam" id="exam">
+									<select class="form-control _select _h_sm" name="exam">
 										<option value="1">1-2 Computers</option>
 										<option value="2">3 Computers</option>
 										<option value="3">4 Computers</option>
@@ -97,10 +97,12 @@
 					<tfoot>
 						<tr>
 							<td colspan="4">
-								<div class="table-cart__form-group-btn">
-									<input class="table-cart__form-control form-control _h_md" id="email" type="text" placeholder="Promotion Code">
-									<button class="table-cart__btn btn-reset btn _primary">Apply</button>
-								</div>
+								<form action="#">
+									<div class="table-cart__form-group-btn">
+										<input class="table-cart__form-control form-control _h_md" type="text" placeholder="Promotion Code">
+										<button class="table-cart__btn btn-reset btn _primary">Apply</button>
+									</div>
+								</form>
 							</td>
 						</tr>
 						<tr>
@@ -209,7 +211,7 @@
 								<label class="form-label" for="cvv-code">CVV Code</label>
 								<div class="cvv-code">
 									<input class="cvv-code__form-control form-control" id="cvv-code" type="text" placeholder="CVV Code" maxlength="4">
-									<button class="cvv-code__btn btn-reset ">
+									<button type="button" class="cvv-code__btn btn-reset btn-modal" data-mfp-src="#what-is-this">
 										<img class="cvv-code__img" src="static/img/ui/card.png" alt="card">
 										<span class="cvv-code__text link link-stretched">What is This?</span>
 									</button>
@@ -229,4 +231,5 @@
 
 @@include('block/footer/_footer.html')
 @@include('block/_up.html')
+@@include('block/modal/_what-is-this.html')
 @@include('block/_scripts.html')
