@@ -2,8 +2,14 @@
 
 svg4everybody();
 
-// ///////////////////////////////////// polifill
+// ///////////////////////////////////// polifill inicialize
 objectFitImages();
+
+// ///////////////////////////////////// plagin icialize
+
+const lazyLoadInstance = new LazyLoad({
+	elements_selector: ".lazy"
+});
 
 // ///////////////////////////////////// block
 @@include('block/_hamburger.js')
@@ -23,7 +29,7 @@ $('button	').on('click', function() {
 });
 
 // change option color
-$('select').on('change', function (){
+$('.form-control._placeholder').on('change', function (){
 	let color = $(this).find('option').css('color');
 	$(this).css('color', color);
 });

@@ -25,14 +25,16 @@
 	&._select {
 		padding-right: 60px;
 
+		@media (max-width: $sm) {
+			padding-right: 48px;
+		}
+	}
+
+	&._placeholder {
 		color: #b1b1b8;
 
 		option {
 			color: $c-main;
-		}
-
-		@media (max-width: $sm) {
-			padding-right: 48px;
 		}
 	}
 
