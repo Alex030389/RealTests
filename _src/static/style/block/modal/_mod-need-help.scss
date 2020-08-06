@@ -31,6 +31,10 @@
 	&__text {
 		display: none;
 		padding: 10px 20px;
+
+		&._show {
+			display: block;
+		}
 	}
 
 	&__list {

@@ -6,7 +6,6 @@ svg4everybody();
 objectFitImages();
 
 // ///////////////////////////////////// plagin icialize
-
 const lazyLoadInstance = new LazyLoad({
 	elements_selector: ".lazy"
 });
@@ -20,7 +19,8 @@ const lazyLoadInstance = new LazyLoad({
 @@include('block/_modal.js')
 @@include('block/_show-password.js')
 @@include('block/_scroll-top.js')
-@@include('block/_stick-footer.js')
+@@include('block/_copy-discount.js')
+
 
 // ///////////////////////////////////// ather
 // remove focus from all button
@@ -37,7 +37,30 @@ $('.form-control._placeholder').on('change', function (){
 // add margin bottom all-vendors__wrap-link
 $('.all-vendors__letter').prev(".all-vendors__wrap-link").css({"margin-bottom": "23px"});
 
-
-$('[data-js="mod-help-title"]').on('click', function() {
-		$(this).next().slideToggle(200);
+// modal accordion
+$('.mod-need-help__list').on('click', '.mod-need-help__btn', function() {
+	$(this).next().slideToggle();
 });
+
+// ///////////////////////////////////////////////////// stick footer
+(function () {
+	let isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+
+	let stickFooter = function () {
+		let FOOTER = document.querySelector('footer');
+		let MAIN = document.querySelector('main');
+		let BODY = document.querySelector('body');
+		let footerHeight = FOOTER.offsetHeight;
+		BODY.style.position = 'relative';
+		MAIN.style.marginBottom = footerHeight + 'px';
+		FOOTER.style.position = 'absolute';
+		FOOTER.style.bottom = '0';
+		FOOTER.style.left = '0';
+		FOOTER.style.width = '100%';
+	};
+
+	if (isIE11) {
+		stickFooter();
+		window.addEventListener('resize', stickFooter);
+	};
+})();

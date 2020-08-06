@@ -41,11 +41,11 @@
 				<div class="form-group d-none d-xl-block">
 					<label class="form-label" for="vendor">User Center</label>
 					<div class="select-wrap">
-						<select class="form-control _select" name="vendor" id="vendor">
-							<option value="1" selected>My Products</option>
-							<option value="2">Order/Invoice</option>
-							<option value="3">Account Settings</option>
-							<option value="4">Log Out</option>
+						<select class="form-control _select" name="vendor" id="vendor" onchange="window.location.href=this.options[this.selectedIndex].value">
+							<option value="user-products.html">My Products</option>
+							<option value="2" selected>Order/Invoice</option>
+							<option value="user-settings.html">Account Settings</option>
+							<option value="#">Log Out</option>
 						</select>
 					</div><!--/select-wrap-->
 				</div>
