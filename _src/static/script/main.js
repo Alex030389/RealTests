@@ -24,9 +24,9 @@ const lazyLoadInstance = new LazyLoad({
 
 // ///////////////////////////////////// ather
 // remove focus from all button
-$('button	').on('click', function() {
-	$(this).blur();
-});
+// $('button	').on('click', function() {
+// 	$(this).blur();
+// });
 
 // change option color
 $('.form-control._placeholder').on('change', function (){
@@ -41,6 +41,7 @@ $('.all-vendors__letter').prev(".all-vendors__wrap-link").css({"margin-bottom": 
 $('.mod-need-help__list').on('click', '.mod-need-help__btn', function() {
 	$(this).next().slideToggle();
 });
+
 
 // ///////////////////////////////////////////////////// stick footer
 (function () {

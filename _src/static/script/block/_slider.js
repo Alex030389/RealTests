@@ -12,7 +12,8 @@ function startSlider0() {
 			slidesToScroll: 1,
 			arrows: false,
 			autoplay: true,
-			autoplaySpeed: 4000,
+			autoplaySpeed: 6000,
+			speed: 1000,
 			swipe: false,
 			infinite: true,
 			accessibility: false,
@@ -24,9 +25,6 @@ function startSlider0() {
 		});
 	}
 }
-
-
-
 
 
 //////////////////////////////////////////// data-slider="1"

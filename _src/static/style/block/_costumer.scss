@@ -46,9 +46,14 @@
 
 	&__star {
 		margin-left: auto;
+
 		@media (max-width: 370px) {
-			// order: -1;
 			margin-left: 0;
+
+			img {
+				width: 16px;
+				height: 16px;
+			}
 		}
 	}
 

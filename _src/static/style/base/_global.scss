@@ -103,6 +103,13 @@ select::-ms-expand {
 	-webkit-text-fill-color: currentColor;
 }
 
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+
 :disabled,
 .disabled {
 	cursor: default;

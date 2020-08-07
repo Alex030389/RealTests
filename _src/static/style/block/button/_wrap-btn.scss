@@ -1,9 +1,22 @@
 .wrap-btn {
+	display: flex;
+
+	&._pt_md {
+		padding-top: 19px;
+		@media (max-width: $md) {
+			padding-top: 8px;
+		}
+	}
+
 	&._pt_sm {
 		padding-top: 10px;
 
 		@media (max-width: $sm) {
 			padding-top: 8px;
 		}
+	}
+
+	&._center {
+		justify-content: center;
 	}
 }

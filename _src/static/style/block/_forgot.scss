@@ -21,4 +21,10 @@
 			}
 		}
 	}
+
+	&__subtitle {
+		@media (max-width: $sm) {
+			text-align: center !important;
+		}
+	}
 }

@@ -20,7 +20,3 @@ $('body').mouseup(function(even) {
     $('[data-js="main-search"]').slideUp(150);
   }
 });
-
-// $(window).resize(function() {
-// 	$('[data-js="main-search"]').hide();
-// });

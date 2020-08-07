@@ -14,7 +14,11 @@
 		border-radius: 15px;
 	}
 
-	&._mw_sm {
+	&._large {
+		max-width: 950px;
+	}
+
+	&._small {
 		max-width: 580px;
 	}
 
