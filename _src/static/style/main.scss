@@ -84,11 +84,5 @@
 @import "block/modal/modal";
 @import "block/up";
 
-// ///////////////////////////////////////// ather
-button:hover,
-a:hover {
-	cursor: url(../img/cursor.png) 8 0, pointer;
-}
-
 // ///////////////////////////////////////// display
 @import "base/display";
