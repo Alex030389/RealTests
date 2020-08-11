@@ -18,17 +18,10 @@
 
 	&__btn-list {
 		display: flex;
-		padding: 0 15px;
+
+// padding: 0 15px;
 		overflow-x: auto;
 		overflow-y: hidden;
-
-		&::after {
-			content: "";
-
-			display: block;
-			flex-shrink: 0;
-			width: 15px;
-		}
 
 		&._after-d-none {
 			&::after {

@@ -35,7 +35,7 @@ $('.form-control._placeholder').on('change', function (){
 });
 
 // add margin bottom all-vendors__wrap-link
-$('.all-vendors__letter').prev(".all-vendors__wrap-link").css({"margin-bottom": "23px"});
+$('.all-vendors__letter').prev(".all-vendors__wrap-link").css({"margin-bottom": "40px"});
 
 // modal accordion
 $('.mod-need-help__list').on('click', '.mod-need-help__btn', function() {
