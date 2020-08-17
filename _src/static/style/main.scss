@@ -30,12 +30,17 @@
 @import "block/s";
 @import "block/tab";
 @import "block/who-choose";
+@import "block/testsimbox";
 @import "block/slider/slider";
 @import "block/costumer";
 @import "block/star";
 @import "block/breadcrum";
 @import "block/box-style";
+@import "block/pop-exams";
+@import "block/all-vendors-s";
 @import "block/exam-slide";
+@import "block/free-demo";
+@import "block/choose-exam";
 @import "block/all-vendors";
 @import "block/testimonials";
 @import "block/guarantee";
@@ -74,6 +79,8 @@
 @import "block/table/table-user-products";
 @import "block/modal/mod-discount";
 @import "block/form/use-code";
+
+
 @import "block/modal/mod-downl-dem";
 @import "block/modal/mod-guarant";
 @import "block/modal/mod-need-help";
@@ -85,3 +92,15 @@
 
 // ///////////////////////////////////////// display
 @import "base/display";
+
+
+// ////////// anchor for debug
+.anchor {
+	color: red;
+
+	background-color: yellow;
+
+	&._hidden {
+		display: none;
+	}
+}

@@ -37,16 +37,6 @@
 		}
 	}
 
-	&._testimonials {
-		padding-top: 53px;
-		padding-bottom: 63px;
-
-		@media (max-width: $sm) {
-			padding-top: 30px;
-			padding-bottom: 44px;
-		}
-	}
-
 	&._guarantee {
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -62,15 +52,6 @@
 
 		@media (max-width: $sm) {
 		}
-	}
-
-	&._free-demo {
-		padding-top: 44px;
-	}
-
-	&._choose-exam {
-		padding-top: 36px;
-		padding-bottom: 24px;
 	}
 
 	&._log-in {

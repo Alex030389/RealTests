@@ -61,18 +61,17 @@ $('[data-slider="1"] button').text('');
 //////////////////////////////////////////// data-slider="1"
 $('[data-slider="2"]').slick({
 	slidesToShow: 6,
-	// slidesToScroll: 1,
 	arrows: false,
-	// infinite: false,
 	dots: true,
 	accessibility: false,
 	touchThreshold: 20,
+	variableWidth: true,
 	swipeToSlide: true,
 	responsive: [
 		{
 			breakpoint: 1200,
 			settings: {
-				variableWidth: true
+				variableWidth: true,
 			}
 		},
 		{

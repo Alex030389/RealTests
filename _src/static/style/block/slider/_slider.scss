@@ -18,12 +18,12 @@
 	}
 
 	&._pt_2 {
-		padding-top: 20px;
+		// padding-top: 20px;
 
-		@media (max-width: $sm) {
-			margin-top: -5px;
-			padding-top: 0;
-		}
+		// @media (max-width: $sm) {
+		// 	margin-top: -5px;
+		// 	padding-top: 0;
+		// }
 	}
 
 	&__item {
@@ -47,11 +47,20 @@
 	}
 
 	.slick-list {
+		height: 100%;
 		padding-bottom: 21px;
 
 		@media (max-width: $sm) {
 			padding-bottom: 15px;
 		}
+	}
+
+	.slick-track {
+		display: flex !important;
+	}
+
+	.slick-slide {
+		height: inherit !important;
 	}
 
 	.slick-dots {
@@ -74,6 +83,12 @@
 			background: #f2f2f3;
 			border: none;
 			border-radius: 50%;
+
+			transition: .3s;
+
+			&:hover {
+				background-color: #d0e3fb;
+			}
 		}
 		.slick-active button {
 			background-color: #1273eb;

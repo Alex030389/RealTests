@@ -2,11 +2,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0;
 
 	font-weight: 700;
 	font-size: 18px;
 	color: #fff;
+	white-space: nowrap;
 
+	background-color: transparent;
+	border: none;
 	border-radius: 8px;
 
 	@media (max-width: $sm) {

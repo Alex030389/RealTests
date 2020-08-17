@@ -1,0 +1,16 @@
+.all-vendors-s {
+	padding-top: 35px;
+	padding-bottom: 35px;
+
+	@media (max-width: $sm) {
+		padding-bottom: 20px;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+
+		@media (max-width: $md) {
+			margin-bottom: 30px;
+		}
+	}
+}

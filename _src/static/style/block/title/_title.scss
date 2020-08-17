@@ -1,7 +1,12 @@
 .title {
 	font-size: 44px;
 	line-height: 1.27;
+	text-align: center;
 	color: #0d0c22;
+
+	@media (max-width: $sm) {
+		font-size: 24px;
+	}
 
 	&._fz_36 {
 		font-size: 36px;
@@ -16,25 +21,11 @@
 		font-size: 24px;
 	}
 
-	&._ta_center {
-		text-align: center;
-	}
-
 	&._mb_2 {
 		margin-bottom: 20px;
 
 		@media (max-width: $sm) {
 			margin-bottom: 10px;
 		}
-	}
-
-	&._mb_2-5 {
-		margin-bottom: 25px;
-	}
-
-	// &._mb
-
-	@media (max-width: $sm) {
-		font-size: 24px;
 	}
 }

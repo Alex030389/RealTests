@@ -1,0 +1,15 @@
+.pop-exams {
+	padding-top: 35px;
+	padding-bottom: 30px;
+	@media (max-width: $sm) {
+		padding-bottom: 15px;
+	}
+
+	&__subtitle {
+		margin-bottom: 26px;
+
+		@media (max-width: $sm) {
+			margin-bottom: 15px;
+		}
+	}
+}
