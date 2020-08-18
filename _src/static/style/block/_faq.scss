@@ -1,12 +1,16 @@
-.faq-list {
-	@extend .list-reset;
+.faq {
+	padding-top: 35px;
 
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -60px;
+	&__list {
+		@extend .list-reset;
 
-	@media (max-width: $sxl) {
-		margin: 0 -30px;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -60px;
+
+		@media (max-width: $sxl) {
+			margin: 0 -30px;
+		}
 	}
 
 	&__item {
@@ -27,6 +31,7 @@
 			width: $col-1;
 		}
 	}
+
 	&__title {
 		@media (max-width: $sm) {
 			font-size: 20px;

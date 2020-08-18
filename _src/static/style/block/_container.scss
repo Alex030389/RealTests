@@ -26,34 +26,6 @@
 		max-width: 500px;
 	}
 
-	&._who-chooses {
-		max-width: 1200px;
-		padding-top: 44px;
-		padding-bottom: 32px;
-
-		@media (max-width: $sm) {
-			padding-top: 30px;
-			padding-bottom: 25px;
-		}
-	}
-
-	&._guarantee {
-		padding-top: 30px;
-		padding-bottom: 30px;
-
-		@media (max-width: $sm) {
-			padding-bottom: 22px;
-		}
-	}
-
-	&._content-text {
-		padding-top: 15px;
-		padding-bottom: 52px;
-
-		@media (max-width: $sm) {
-		}
-	}
-
 	&._log-in {
 		padding-top: 43px;
 		padding-bottom: 60px;
