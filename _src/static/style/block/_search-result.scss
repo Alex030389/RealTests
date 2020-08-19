@@ -1,8 +1,18 @@
 .search-result {
-	padding: 30px 0;
+	padding: 30px 0 50px;
+
+	&__inner {
+		height: 100%;
+		padding: 20px;
+	}
 
 	&__title {
 		font-weight: 600;
 		font-size: 26px;
+	}
+
+	&__try-again {
+		font-size: 18px;
+		font-style: italic;
 	}
 }

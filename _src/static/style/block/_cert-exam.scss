@@ -23,10 +23,17 @@
 		@media (max-width: $sm) {
 			width: $col-1;
 			padding-bottom: 8px;
+
+			&:nth-of-type(n + 7) {
+				display: none;
+			}
 		}
 	}
 
 	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 		padding: 19px 32px 32px;
 
 		background: #f4f4f4;
@@ -57,6 +64,7 @@
 	}
 
 	&__form {
+		margin-top: auto;
 	}
 
 	&__box-radio-label {
