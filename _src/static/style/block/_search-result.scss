@@ -2,8 +2,19 @@
 	padding: 30px 0 50px;
 
 	&__inner {
-		height: 100%;
 		padding: 20px;
+
+		@media (max-width: $sm) {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+
+		&._pl_lg {
+			padding-left: 40px;
+			@media (max-width: $sm) {
+				padding-left: 20px;
+			}
+		}
 	}
 
 	&__title {

@@ -30,6 +30,13 @@
 		@media (max-width: $md) {
 			width: $col-1;
 		}
+
+		&._2 {
+			width: $col-2;
+			@media (max-width: $md) {
+				width: $col-1;
+			}
+		}
 	}
 
 	&__title {
