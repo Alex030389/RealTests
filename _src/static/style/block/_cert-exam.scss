@@ -1,6 +1,14 @@
 .cert-exam {
 	padding-top: 35px;
 
+	&._pb_large {
+		padding-bottom: 50px;
+
+		@media (max-width: $sm) {
+			padding-bottom: 40px;
+		}
+	}
+
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
@@ -34,7 +42,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		padding: 19px 32px 32px;
+		padding: 19px 25px 32px;
 
 		background: #f4f4f4;
 		border-radius: 8px;
@@ -59,19 +67,40 @@
 
 	&__name {
 		margin-bottom: 20px;
+		width: 100%;
 
 		color: #6e6d7a;
 	}
 
 	&__form {
 		margin-top: auto;
+		width: 100%;
+	}
+
+	&__radio-row {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	&__radio-col {
+		&:first-child {
+			padding-right: 10px;
+			min-width: 150px;
+		}
+
+		&:last-child {
+		}
 	}
 
 	&__box-radio-label {
-		margin-bottom: 14px;
-	}
+		margin-bottom: 20px;
 
-	&__radio {
+		&._mb_sm {
+			margin-bottom: 0;
+		}
 	}
 
 	&__label {
@@ -81,10 +110,32 @@
 
 		font-weight: 700;
 
+		&._fz_sm {
+			font-size: 14px;
+
+			.normal,
+			.red,
+			.gray {
+				font-weight: normal;
+			}
+
+			.red {
+				color: red;
+			}
+			
+			.gray {
+				color: gray;
+				font-size: 12px;
+				text-decoration: line-through;
+			}
+		}
+
 		&::before {
 			content: "";
 			position: absolute;
-			top: 2px;
+			// top: 2px;
+			top: 50%;
+			transform: translateY(-50%);
 			left: 0;
 
 			display: inline-block;
@@ -98,7 +149,9 @@
 		&::after {
 			content: "";
 			position: absolute;
-			top: 6px;
+			// top: 6px;
+			top: 50%;
+			transform: translateY(-50%);
 			left: 4px;
 
 			display: inline-block;

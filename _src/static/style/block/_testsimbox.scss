@@ -7,6 +7,14 @@
 		padding-bottom: 44px;
 	}
 
+	&._pt_sm {
+		padding-top: 5px;
+
+		@media (max-width: $sm) {
+			padding-top: 0;
+		}
+	}
+
 	&__subtitle {
 		margin-bottom: 35px;
 		@media (max-width: $sm) {

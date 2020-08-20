@@ -87,4 +87,16 @@ $('[data-slider="2"]').slick({
 	]
 });
 
-// $('[data-slider="1"] button').text('');
+
+// check the number of buttons in the slider
+checkSliderBtn();
+
+$(window).resize(function() {
+	checkSliderBtn()	
+})
+
+function checkSliderBtn() {
+	if($('.slick-active button').length == 1) {
+		$('.slick-active button').hide();
+	}
+}
