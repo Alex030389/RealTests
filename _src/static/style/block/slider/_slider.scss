@@ -78,14 +78,14 @@
 			height: 12px;
 			padding: 0;
 
-			font-size: 0;
+			font-size: 1px;
+			color: transparent;
 
 			background: #f2f2f3;
 			border: none;
 			border-radius: 50%;
 
 			transition: .3s;
-
 			&:hover {
 				background-color: #d0e3fb;
 			}

@@ -15,6 +15,13 @@
 		}
 	}
 
+	&._pt_md {
+		padding-top: 15px;
+		@media (max-width: $sm) {
+			padding-top: 10px;
+		}
+	}
+
 	&__subtitle {
 		margin-bottom: 35px;
 		@media (max-width: $sm) {

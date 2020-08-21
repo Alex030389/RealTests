@@ -28,6 +28,10 @@ function startSlider0() {
 
 
 //////////////////////////////////////////// data-slider="1"
+$('[data-slider="1"]').on('init', function(){
+
+});
+
 $('[data-slider="1"]').slick({
 	slidesToShow: 3,
 	slidesToScroll: 1,
@@ -56,7 +60,7 @@ $('[data-slider="1"]').slick({
 	]
 });
 
-$('[data-slider="1"] button').text('');
+
 
 //////////////////////////////////////////// data-slider="1"
 $('[data-slider="2"]').slick({
@@ -88,15 +92,15 @@ $('[data-slider="2"]').slick({
 });
 
 
-// check the number of buttons in the slider
-checkSliderBtn();
+	// check the number of buttons in the slider
+	checkSliderBtn();
 
-$(window).resize(function() {
-	checkSliderBtn()	
-})
+	$(window).resize(function() {
+		checkSliderBtn()	
+	})
 
-function checkSliderBtn() {
-	if($('.slick-active button').length == 1) {
-		$('.slick-active button').hide();
+	function checkSliderBtn() {
+		if($('.slick-dots li').length == 1) {
+			$('.slick-dots').hide();
+		}
 	}
-}
