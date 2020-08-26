@@ -1,0 +1,33 @@
+.sitemap {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+		padding-top: 10px;
+	}
+
+	&__item {
+		width: $col-6;
+		padding: 0 10px 10px;
+
+		@media (max-width: $sxl) {
+			width: $col-5;
+		}
+
+		@media (max-width: $xl) {
+			width: $col-4;
+		}
+
+		@media (max-width: $lg) {
+			width: $col-3;
+		}
+
+		@media (max-width: $md) {
+			width: $col-2;
+		}
+
+		@media (max-width: $sm) {
+			width: $col-1;
+		}
+	}
+}

@@ -10,14 +10,33 @@
 
 		font-weight: 700;
 		font-size: 20px;
+		line-height: 1.2;
 		text-align: center;
 		color: #374957;
 
 		border-bottom: 1px solid #f2f2f3;
+
+		small {
+			font-size: 16px;
+		}
+
+		&._py_sm {
+			padding-top: 16px;
+			padding-bottom: 14px;
+		}
 	}
 
 	&__body {
 		padding: 22px 30px;
+
+		@media (max-width: $lg) {
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		@media (max-width: $md) {
+			padding-bottom: 0;
+		}
 
 		&._box-exam {
 			@media (max-width: $lg) {
@@ -26,26 +45,33 @@
 			}
 
 			@media (max-width: $md) {
-				padding: 0;
-				padding-top: 20px;
+				padding-right: 0;
+				padding-left: 0;
 			}
-			@media (max-width: $sm) {
-				padding-top: 0;
-			}
+		}
+
+		&._pt_sm {
+			padding-top: 16px;
 		}
 	}
 
 	&__list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin-bottom: 8px;
+		margin: 0 auto 8px;
+
+		@media (max-width: $lg) {
+			max-width: 390px;
+		}
 	}
 
 
 	&__item {
-		min-width: 150px;
-		padding: 0 5px 8px;
+		margin-bottom: 9px;
+
+		color: #293741;
+
+		span {
+			color: #6e6d7a;
+		}
 	}
 
 	&__link {
@@ -69,6 +95,13 @@
 
 			font-size: 18px;
 		}
+
+		&._type-2 {
+			flex-direction: row;
+			justify-content: center;
+			margin-bottom: 10px;
+			padding-top: 8px;
+		}
 	}
 
 	&__old-price {
@@ -77,6 +110,7 @@
 		color: #ff2e00;
 
 		text-decoration-line: line-through;
+
 		@media (max-width: $lg) {
 			margin-right: 30px;
 			margin-bottom: 0;
@@ -84,6 +118,20 @@
 
 		@media (max-width: $sm) {
 			margin-right: 12px;
+		}
+
+		&._type-2 {
+			margin-right: 10px;
+			margin-bottom: 0;
+
+			@media (max-width: $lg) {
+				margin-right: 30px;
+				margin-bottom: 0;
+			}
+
+			@media (max-width: $sm) {
+				margin-right: 12px;
+			}
 		}
 	}
 
@@ -118,7 +166,8 @@
 
 	&__info {
 		display: flex;
-		display: none;
+
+// display: none;
 		flex-direction: column;
 		align-items: center;
 		padding-top: 15px;

@@ -54,5 +54,17 @@
 		@media (max-width: $lg) {
 			max-width: 100%;
 		}
+
+		&._mw_lg {
+			max-width: 440px;
+
+			@media (max-width: $xl) {
+				max-width: 370px;
+			}
+
+			@media (max-width: $lg) {
+				max-width: 100%;
+			}
+		}
 	}
 }

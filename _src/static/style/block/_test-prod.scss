@@ -1,0 +1,34 @@
+.test-prod {
+	padding: 58px 0 0;
+
+	@media (max-width: $sm) {
+		padding-top: 35px;
+	}
+
+	&__container {
+		max-width: 1260px;
+	}
+
+	&__title {
+		margin-bottom: 29px;
+
+		@media (max-width: $sm) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px -20px;
+	}
+
+	&__col {
+		width: $col-2;
+		padding: 0 10px 20px;
+
+		@media (max-width: $sm) {
+			width: $col-1;
+		}
+	}
+}

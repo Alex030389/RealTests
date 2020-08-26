@@ -20,7 +20,6 @@ const lazyLoadInstance = new LazyLoad({
 @@include('block/_show-password.js')
 @@include('block/_scroll-top.js')
 @@include('block/_copy-discount.js')
-@@include('block/_align-heights.js')
 @@include('block/_show-cert-exam-item.js')
 
 

@@ -1,0 +1,42 @@
+.st-tests {
+	padding: 38px 0 42px;
+
+	@media (max-width: $sm) {
+		padding: 20px 0 20px;
+	}
+
+	&__title {
+		margin-bottom: 29px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+
+	&__item {
+		width: $col-6;
+		padding: 0 15px 8px;
+
+		@media (max-width: $xl) {
+			width: $col-5;
+		}
+
+		@media (max-width: $lg) {
+			width: $col-4;
+		}
+
+		@media (max-width: $md) {
+			width: $col-3;
+		}
+
+		@media (max-width: $sm) {
+			width: $col-2;
+		}
+
+		@media (max-width: $ssm) {
+			// width: $col-1;
+		}
+	}
+}

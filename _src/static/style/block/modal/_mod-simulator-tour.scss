@@ -1,0 +1,31 @@
+.mod-simulator-tour {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__img {
+		margin-bottom: 15px;
+	}
+
+	&__box-text {
+		padding-bottom: 15px;
+	}
+
+	&__title {
+		margin-bottom: 5px;
+
+		font-weight: 600;
+		font-size: 20px;
+	}
+
+	&__list {
+		padding-left: 15px;
+	}
+
+	&__item {
+		color: #fd3d3a;
+		span {
+			color: $c-main;
+		}
+	}
+}
