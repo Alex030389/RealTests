@@ -1,34 +1,5 @@
 .forgot {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	min-height: 90vh;
-	padding-top: 40px;
-	padding-bottom: 40px;
-
 	@media (max-width: $sm) {
-		min-height: 80vh;
-		padding-top: 25px;
-		padding-bottom: 25px;
-	}
-
-	&__subtitle {
-		@media (max-width: $sm) {
-			text-align: left;
-		}
-	}
-
-	&__container {
-		@media (max-width: $sm) {
-			text-align: left;
-		}
-
-		&:not(:last-child) {
-			margin-bottom: 60px;
-
-			@media (max-width: $sm) {
-				margin-bottom: 40px;
-			}
-		}
+		padding-top: 30px;
 	}
 }

@@ -1,7 +1,17 @@
 .forgot-note {
+	padding-top: 150px;
+
 	font-size: 14px;
 	text-align: center;
 	color: #6e6d7a;
+
+	@media (max-width: $lg) {
+		padding-top: 100px;
+	}
+
+	@media (max-width: $lg) {
+		padding-top: 50px;
+	}
 
 	&__p:not(:last-child) {
 		margin-bottom: 33px;

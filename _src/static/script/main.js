@@ -5,7 +5,7 @@ svg4everybody();
 // ///////////////////////////////////// polifill inicialize
 objectFitImages();
 
-// ///////////////////////////////////// plagin icialize
+// ///////////////////////////////////// plagin inicialize
 const lazyLoadInstance = new LazyLoad({
 	elements_selector: ".lazy"
 });
@@ -21,6 +21,8 @@ const lazyLoadInstance = new LazyLoad({
 @@include('block/_scroll-top.js')
 @@include('block/_copy-discount.js')
 @@include('block/_show-cert-exam-item.js')
+@@include('block/_tab-local-storage.js')
+
 
 
 // ///////////////////////////////////// ather

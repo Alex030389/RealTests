@@ -62,6 +62,7 @@
 @import "block/form/box-checkbox-link";
 @import "block/form/box-checkbox";
 @import "block/form/password-wrap";
+@import "block/register";
 @import "block/forgot";
 @import "block/forgot-note";
 @import "block/partnership";
@@ -110,4 +111,9 @@
 	&._hidden {
 		display: none;
 	}
+}
+
+// validator.js
+.error_message {
+	color: red;
 }

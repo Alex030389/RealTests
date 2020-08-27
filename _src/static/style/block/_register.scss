@@ -1,0 +1,13 @@
+.register {
+	padding-top: 43px;
+	padding-bottom: 60px;
+
+	@media (max-width: $sm) {
+		padding-top: 10px;
+		padding-bottom: 40px;
+	}
+
+	&__container {
+		max-width: 500px;
+	}
+}
