@@ -26,6 +26,13 @@
 		@media (max-width: $lg) {
 			flex-direction: column;
 		}
+
+		&._v-2 {
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+
+			border-bottom: 1px solid #cfd9e0;
+		}
 	}
 
 	&__exam {

@@ -25,12 +25,22 @@
 		max-width: $col-3;
 		padding: 0 10px 20px;
 
+		&:nth-child(n + 10) {
+			display: none;
+		}
+
 		@media (max-width: $xl) {
 			max-width: $col-2;
 		}
 
 		@media (max-width: $lg) {
 			max-width: $col-1;
+		}
+
+		@media (max-width: $md) {
+			&:nth-child(n + 7) {
+				display: none;
+			}
 		}
 	}
 }

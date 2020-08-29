@@ -24,6 +24,12 @@ const lazyLoadInstance = new LazyLoad({
 @@include('block/_tab-local-storage.js')
 
 
+$('[data-btn="testimonial-load-more"]').on('click', function() {
+	$('.testimonials__item:hidden').fadeIn(500);
+	$(this).hide();
+});
+
+
 
 // ///////////////////////////////////// ather
 // remove focus from all button

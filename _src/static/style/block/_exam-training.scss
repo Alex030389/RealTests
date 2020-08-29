@@ -1,0 +1,11 @@
+.exam-training {
+	padding-top: 50px;
+
+	@media (max-width: $sm) {
+		padding-top: 50px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+}

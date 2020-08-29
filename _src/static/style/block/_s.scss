@@ -8,4 +8,12 @@
 	&._lite-gray {
 		background-color: #f9f9f9;
 	}
+
+	&._mb_lg {
+		padding-bottom: 40px;
+
+		@media (max-width: $sm) {
+			padding-bottom: 20px;
+		}
+	}
 }

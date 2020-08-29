@@ -53,6 +53,13 @@
 		&._pt_sm {
 			padding-top: 16px;
 		}
+
+		&._py_0 {
+			@media (max-width: $lg) {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+		}
 	}
 
 	&__list {
@@ -152,6 +159,7 @@
 		max-width: 380px;
 
 		font-size: 16px;
+		text-align: center;
 
 		&:not(:first-child) {
 			@media (max-width: $lg) {
