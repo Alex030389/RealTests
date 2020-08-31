@@ -25,6 +25,13 @@
 		@media (max-width: $sm) {
 			max-width: 115px;
 		}
+
+		&._mx_sm-auto {
+			@media (max-width: $sm) {
+				margin-right: auto;
+				margin-left: auto;
+			}
+		}
 	}
 
 	&__main-nav {

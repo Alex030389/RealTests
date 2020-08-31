@@ -1,0 +1,31 @@
+.demodownload {
+	padding: 40px 0 60px;
+
+	font-size: 18px;
+
+	@media (max-width: $sm) {
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 22px;
+	}
+
+	&__info {
+		padding-left: 40px;
+
+		background: url(../img/icon/information.svg) left center no-repeat;
+	}
+
+	&__start {
+		font-weight: 600;
+	}
+
+	&__box-style {
+		max-width: 470px;
+		margin-top: 30px;
+		padding: 20px;
+	}
+}

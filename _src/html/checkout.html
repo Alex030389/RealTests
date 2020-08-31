@@ -1,5 +1,5 @@
 @@include('block/_head.html')
-@@include('block/header/_header.html')
+@@include('block/header/_header-2.html')
 
 <main class="main">
 	<section class="cart">
@@ -22,14 +22,12 @@
 					<tbody>
 						<tr>
 							<td class="table__td _ta_center">
-								<div class="select-wrap _sm">
-									<select class="form-control _select _h_sm" name="exam">
-										<option value="1">1-2 Computers</option>
-										<option value="2">3 Computers</option>
-										<option value="3">4 Computers</option>
-										<option value="4">5 Computers</option>
-									</select>
-								</div><!--/select-wrap-->
+								<select class="form-control _select _h_sm" data-js="selectric" name="exam">
+									<option value="1">1-2 Computers</option>
+									<option value="2">3 Computers</option>
+									<option value="3">4 Computers</option>
+									<option value="4">5 Computers</option>
+								</select>
 							</td>
 							<td>
 								<a class="table-cart__link link" href="#">CompTIA N10-007 Q&amp;A</a>
@@ -46,14 +44,12 @@
 						</tr>
 						<tr>
 							<td class="table__td _ta_center">
-								<div class="select-wrap _sm">
-									<select class="form-control _select _h_sm" name="exam">
-										<option value="1">1-2 Computers</option>
-										<option value="2">3 Computers</option>
-										<option value="3">4 Computers</option>
-										<option value="4">5 Computers</option>
-									</select>
-								</div><!--/select-wrap-->
+								<select class="form-control _select _h_sm" data-js="selectric" name="exam">
+									<option value="1">1-2 Computers</option>
+									<option value="2">3 Computers</option>
+									<option value="3">4 Computers</option>
+									<option value="4">5 Computers</option>
+								</select>
 							</td>
 							<td>
 								<a class="table-cart__link link" href="#">CompTIA N10-007 Q&amp;A</a>
@@ -70,14 +66,12 @@
 						</tr>
 						<tr>
 							<td class="table__td _ta_center">
-								<div class="select-wrap _sm">
-									<select class="form-control _select _h_sm" name="exam">
-										<option value="1">1-2 Computers</option>
-										<option value="2">3 Computers</option>
-										<option value="3">4 Computers</option>
-										<option value="4">5 Computers</option>
-									</select>
-								</div><!--/select-wrap-->
+								<select class="form-control _select _h_sm" data-js="selectric" name="exam">
+									<option value="1">1-2 Computers</option>
+									<option value="2">3 Computers</option>
+									<option value="3">4 Computers</option>
+									<option value="4">5 Computers</option>
+								</select>
 							</td>
 							<td>
 								<a class="table-cart__link link" href="#">CompTIA N10-007 Q&amp;A</a>
@@ -147,14 +141,12 @@
 							</div>
 							<div class="form__col _2 form-group _mb_md">
 								<label class="form-label" for="vendor">Country</label>
-								<div class="select-wrap">
-									<select class="form-control _select _placeholder" name="vendor" id="vendor">
-										<option value="" disabled selected hidden>Select Country</option>
-										<option value="1">one</option>
-										<option value="2">two</option>
-										<option value="3">three</option>
-									</select>
-								</div><!--/select-wrap-->
+								<select class="form-control _select _placeholder" data-js="selectric" name="vendor" id="vendor">
+									<option value="" selected disabled hidden>Select Country</option>
+									<option value="1">one</option>
+									<option value="2">two</option>
+									<option value="3">three</option>
+								</select>
 							</div>
 							<div class="form__col _2 form-group _mb_md">
 								<label class="form-label" for="zip">Zip/Postal Code</label>
@@ -167,6 +159,7 @@
 						</div><!--form__row-->
 				</div><!--/container-->
 			</div>
+
 			<div class="s _gray">
 				<div class="billing-info__container _last container _middle">
 						<div class="form__row">
@@ -223,12 +216,10 @@
 					</div><!--/container-->
 			</div>
 		</form>
-
 	</section>
-
 </main>
 
-@@include('block/footer/_footer.html')
+<!-- @@include('block/footer/_footer.html') -->
 @@include('block/_up.html')
 @@include('block/modal/_what-is-this.html')
 @@include('block/_scripts.html')

@@ -30,6 +30,10 @@ $('[data-btn="testimonial-load-more"]').on('click', function() {
 });
 
 
+$('[data-js="selectric"]').selectric({
+	
+});
+
 
 // ///////////////////////////////////// ather
 // remove focus from all button
@@ -39,8 +43,8 @@ $('[data-btn="testimonial-load-more"]').on('click', function() {
 
 // change option color
 $('.form-control._placeholder').on('change', function (){
-	let color = $(this).find('option').css('color');
-	$(this).css('color', color);
+	// let color = $(this).find('option').css('color');
+	$(this).css('color', '#0d0c22 !important');
 });
 
 // add margin bottom all-vendors__wrap-link
