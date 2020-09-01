@@ -29,23 +29,14 @@ $('[data-btn="testimonial-load-more"]').on('click', function() {
 	$(this).hide();
 });
 
-
 $('[data-js="selectric"]').selectric({
-	
+	nativeOnMobile: false,
 });
+
+
 
 
 // ///////////////////////////////////// ather
-// remove focus from all button
-// $('button	').on('click', function() {
-// 	$(this).blur();
-// });
-
-// change option color
-$('.form-control._placeholder').on('change', function (){
-	// let color = $(this).find('option').css('color');
-	$(this).css('color', '#0d0c22 !important');
-});
 
 // add margin bottom all-vendors__wrap-link
 $('.all-vendors__letter').prev(".all-vendors__wrap-link").css({"margin-bottom": "40px"});

@@ -31,13 +31,13 @@
 		}
 	}
 
-	&._placeholder {
-		color: #b1b1b8;
+	// &._placeholder {
+	// 	color: #b1b1b8;
 
-		option {
-			color: $c-main;
-		}
-	}
+	// 	option {
+	// 		color: $c-main;
+	// 	}
+	// }
 
 	&._h_sm {
 		height: 42px;
@@ -103,15 +103,17 @@
 
 .selectric-_placeholder .selectric .label {
 	color: #b1b1b8;
-	// color: red;
 }
 
-.selectric-below .selectric .label {
+.selectric-below .selectric .label,
+.selectric-above .selectric .label {
 	color: $c-main !important;
 }
 
 
 .selectric-items {
+	overflow: hidden;
+
 	background-color: #fff;
 	border: none;
 	border-radius: 5px;

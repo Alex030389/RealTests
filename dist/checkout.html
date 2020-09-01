@@ -47,6 +47,7 @@
 							<th class=""></th>
 						</tr>
 					</thead>
+
 					<tbody>
 						<tr>
 							<td class="table__td _ta_center">
@@ -63,7 +64,7 @@
 							</td>
 							<td class="table__td _ta_center">$69.99</td>
 							<td class="table__td _ta_center" style="vertical-align: center;">
-								<a class="table-cart__del link-reset" href="#" style="vertical-align: center;">
+								<a class="table-cart__del link-reset" href="#">
 									<svg class="icon-close _opacity_60" aria-hidden="true">
 										<use xlink:href="static/img/symbol/sprite.svg#close"></use>
 									</svg>
@@ -72,16 +73,15 @@
 						</tr>
 						<tr>
 							<td class="table__td _ta_center">
-								<select class="form-control _select _h_sm" data-js="selectric" name="exam">
-									<option value="1">1-2 Computers</option>
-									<option value="2">3 Computers</option>
-									<option value="3">4 Computers</option>
-									<option value="4">5 Computers</option>
-								</select>
+								<div class="table__td-num">1</div>
 							</td>
 							<td>
 								<a class="table-cart__link link" href="#">CompTIA N10-007 Q&amp;A</a>
-								<div class="table__info">$7.00 Instant Discount</div>
+								<div class="table__info _gray">																			
+									- CISSP	Q &amp; A<br>
+									- CISSP	Study Guide<br>
+									- CISSP	Audio Guide<br>
+								</div>
 							</td>
 							<td class="table__td _ta_center">$69.99</td>
 							<td class="table__td _ta_center">
@@ -115,6 +115,7 @@
 							</td>
 						</tr>
 					</tbody>
+
 					<tfoot>
 						<tr>
 							<td colspan="4">
@@ -136,7 +137,7 @@
 						</tr>
 					</tfoot>
 				</table>
-			</div><!--/wrap-no-space-->
+			</div><!--/screen-full-->
 		</div><!--/container-->
 	</section>
 
@@ -146,102 +147,117 @@
 			<div class="s _lite-gray">
 				<div class="billing-info__container container _middle">
 					<h2 class="billing-info__title title _fz_36">Secure Billing Information</h2>
-						<div class="form__row">
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="name">First Name on Card</label>
-								<input class="form-control" id="name" type="text" placeholder="First Name on Card">
-							</div>
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="last-name">Last Name on Card</label>
-								<input class="form-control" id="last-name" type="text" placeholder="Last Name on Card">
-							</div>
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="address">Address</label>
-								<input class="form-control" id="address" type="text" placeholder="Address">
-							</div>
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="city">City</label>
-								<input class="form-control" id="city" type="text" placeholder="City">
-							</div>
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="state">State/province</label>
-								<input class="form-control" id="state" type="text" placeholder="State/province">
-							</div>
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="vendor">Country</label>
-								<select class="form-control _select _placeholder" data-js="selectric" name="vendor" id="vendor">
-									<option value="" selected disabled hidden>Select Country</option>
-									<option value="1">one</option>
-									<option value="2">two</option>
-									<option value="3">three</option>
-								</select>
-							</div>
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="zip">Zip/Postal Code</label>
-								<input class="form-control" id="zip" type="text" placeholder="Zip/Postal Code">
-							</div>
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="email">Email address</label>
-								<input class="form-control" id="email" type="text" placeholder="Email address">
-							</div>
-						</div><!--form__row-->
+					<div class="form__row">
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="name">First Name on Card</label>
+							<input class="form-control" id="name" type="text" placeholder="First Name on Card">
+						</div>
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="last-name">Last Name on Card</label>
+							<input class="form-control" id="last-name" type="text" placeholder="Last Name on Card">
+						</div>
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="address">Address</label>
+							<input class="form-control" id="address" type="text" placeholder="Address">
+						</div>
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="city">City</label>
+							<input class="form-control" id="city" type="text" placeholder="City">
+						</div>
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="state">State/province</label>
+							<input class="form-control" id="state" type="text" placeholder="State/province">
+						</div>
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="vendor">Country</label>
+							<select class="form-control _select _placeholder" data-js="selectric" name="vendor" id="vendor">
+								<option value="" selected disabled hidden>Select Country</option>
+								<option value="1">one</option>
+								<option value="2">two</option>
+								<option value="3">three</option>
+								<option value="1">one</option>
+								<option value="2">two</option>
+								<option value="3">three</option>
+								<option value="1">one</option>
+								<option value="2">two</option>
+								<option value="3">three</option>
+								<option value="1">one</option>
+								<option value="2">two</option>
+								<option value="3">three</option>
+								<option value="1">one</option>
+								<option value="2">two</option>
+								<option value="3">three</option>
+								<option value="1">one</option>
+								<option value="2">two</option>
+								<option value="3">three</option>
+								<option value="1">one</option>
+								<option value="2">two</option>
+								<option value="3">three</option>
+								<option value="1">one</option>
+								<option value="2">two</option>
+								<option value="3">three</option>
+							</select>
+						</div>
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="zip">Zip/Postal Code</label>
+							<input class="form-control" id="zip" type="text" placeholder="Zip/Postal Code">
+						</div>
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="email">Email address</label>
+							<input class="form-control" id="email" type="text" placeholder="Email address">
+						</div>
+					</div><!--form__row-->
 				</div><!--/container-->
 			</div>
 
 			<div class="s _gray">
 				<div class="billing-info__container _last container _middle">
-						<div class="form__row">
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="cart-number">Card Number</label>
-								<input class="form-control" id="cart-number" type="text" placeholder="Card Number">
+					<div class="form__row">
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="cart-number">Card Number</label>
+							<input class="form-control" id="cart-number" type="text" placeholder="Card Number">
+						</div>
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="card-type">Card Type</label>
+							<select class="form-control _select _placeholder" data-js="selectric" id="card-type">
+								<option value="" disabled selected hidden>Select Type</option>
+								<option value="1">one</option>
+								<option value="2">two</option>
+								<option value="3">three</option>
+							</select>
+						</div>
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="date-start">Expiration Date</label>
+							<div class="expiration-date">
+								<select class="expiration-date__form-control form-control _select _placeholder" data-js="selectric" id="date-start">
+									<option value="" disabled selected hidden>Select Type</option>
+									<option value="1">01</option>
+									<option value="2">02</option>
+									<option value="3">03</option>
+								</select>
+								<select class="expiration-date__form-control form-control _select _placeholder" data-js="selectric" id="date-end">
+									<option value="" disabled selected hidden>Select Type</option>
+									<option value="1">2018</option>
+									<option value="2">2019</option>
+									<option value="3">2020</option>
+								</select>
 							</div>
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="card-type">Card Type</label>
-								<div class="select-wrap">
-									<select class="form-control _select _placeholder" id="card-type">
-										<option value="" disabled selected hidden>Select Type</option>
-										<option value="1">one</option>
-										<option value="2">two</option>
-										<option value="3">three</option>
-									</select>
-								</div><!--/select-wrap-->
+						</div>
+						<div class="form__col _2 form-group _mb_md">
+							<label class="form-label" for="cvv-code">CVV Code</label>
+							<div class="cvv-code">
+								<input class="cvv-code__form-control form-control" id="cvv-code" type="text" placeholder="CVV Code" maxlength="4">
+								<button type="button" class="cvv-code__btn btn-reset btn-modal" data-mfp-src="#what-is-this">
+									<img class="cvv-code__img" src="static/img/ui/card.png" alt="card">
+									<span class="cvv-code__text link link-stretched">What is This?</span>
+								</button>
 							</div>
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="date-start">Expiration Date</label>
-								<div class="expiration-date">
-									<div class="expiration-date__select-wrap select-wrap">
-										<select class="form-control _select _placeholder" id="date-start">
-											<option value="" disabled selected hidden>Select Type</option>
-											<option value="1">01</option>
-											<option value="2">02</option>
-											<option value="3">03</option>
-										</select>
-									</div>
-									<div class="expiration-date__select-wrap select-wrap">
-										<select class="form-control _select _placeholder" id="date-end">
-											<option value="" disabled selected hidden>Select Type</option>
-											<option value="1">2018</option>
-											<option value="2">2019</option>
-											<option value="3">2020</option>
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="form__col _2 form-group _mb_md">
-								<label class="form-label" for="cvv-code">CVV Code</label>
-								<div class="cvv-code">
-									<input class="cvv-code__form-control form-control" id="cvv-code" type="text" placeholder="CVV Code" maxlength="4">
-									<button type="button" class="cvv-code__btn btn-reset btn-modal" data-mfp-src="#what-is-this">
-										<img class="cvv-code__img" src="static/img/ui/card.png" alt="card">
-										<span class="cvv-code__text link link-stretched">What is This?</span>
-									</button>
-								</div>
-							</div>
-							<div class="form__col wrap-btn _pt_sm">
-								<button class="billing-info__btn form-btn btn-reset btn _primary _h_lg">Pay Now</button>
-							</div>
-						</div><!--form__row-->
-					</div><!--/container-->
+						</div>
+						<div class="form__col wrap-btn _pt_sm">
+							<button class="billing-info__btn form-btn btn-reset btn _primary _h_lg">Pay Now</button>
+						</div>
+					</div><!--form__row-->
+				</div><!--/container-->
 			</div>
 		</form>
 	</section>

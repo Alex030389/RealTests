@@ -309,14 +309,12 @@
 
 				<div class="form-group d-none d-xl-block">
 					<label class="form-label" for="vendor">User Center</label>
-					<div class="select-wrap">
-						<select class="form-control _select" name="vendor" id="vendor" onchange="window.location.href=this.options[this.selectedIndex].value">
-							<option value="1" selected>My Products</option>
-							<option value="user-invoice.html">Order/Invoice</option>
-							<option value="user-settings.html">Account Settings</option>
-							<option value="#">Log Out</option>
-						</select>
-					</div><!--/select-wrap-->
+					<select class="form-control _select" name="vendor" data-js="selectric" id="vendor" onchange="window.location.href=this.options[this.selectedIndex].value">
+						<option value="1" selected>My Products</option>
+						<option value="user-invoice.html">Order/Invoice</option>
+						<option value="user-settings.html">Account Settings</option>
+						<option value="#">Log Out</option>
+					</select>
 				</div>
 			</nav>
 

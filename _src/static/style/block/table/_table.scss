@@ -34,15 +34,25 @@
 	}
 
 	th {
+		padding-bottom: 15px;
+
 		font-weight: 400;
 		color: #6e6d7a;
 		letter-spacing: .02em;
-		padding-bottom: 15px;
 	}
 
 	&__td {
 		&._ta_center {
 			text-align: center;
+		}
+	}
+
+	&__td-num {
+		height: 42px;
+		padding-top: 8px;
+
+		@media (max-width: $md) {
+			text-align: left;
 		}
 	}
 
@@ -53,6 +63,10 @@
 
 		&._ta_center {
 			text-align: center;
+		}
+
+		&._gray {
+			color: #6e6d7a;
 		}
 	}
 }

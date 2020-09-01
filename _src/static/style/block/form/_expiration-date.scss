@@ -1,14 +1,14 @@
 .expiration-date {
 	display: flex;
+}
 
-	&__select-wrap {
-		width: 100%;
-		&:first-child {
-			margin-right: 20px;
+.selectric-expiration-date__form-control {
+	width: 100%;
+	&:first-child {
+		margin-right: 20px;
 
-			@media (max-width: $sm) {
-				margin-right: 8px;
-			}
+		@media (max-width: $sm) {
+			margin-right: 8px;
 		}
 	}
 }
