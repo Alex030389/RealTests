@@ -1,0 +1,104 @@
+@@include('block/_head.html')
+@@include('block/header/_header.html')
+
+<main class="main">
+	<section class="cart _pb_lg">
+		<div class="container">
+			<h1 class="cart__title title _fz_36">Review Your Order</h1>
+			<p class="cart__subtitle subtitle">The following items have been added to your shopping cart. Now, please, enter your billing information below, as it appears on your credit card statement.</p>
+			<p class="cart__wrap-title-link">
+				<a class="cart__link link" href="#">Need help with your purchase?</a>
+			</p>
+			<div class="screen-full _sm">
+				<table class="table table-cart">
+					<thead>
+						<tr>
+							<th class="table__td _ta_center">Qty</th>
+							<th class="">Item Description</th>
+							<th class="table__td _ta_center">Price</th>
+							<th class=""></th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td class="table__td _ta_center">
+								<div class="table__td-num">1</div>
+							</td>
+							<td>
+								<a class="table-cart__link link" href="#">CompTIA N10-007 Q&amp;A</a><br>
+								101 Q & A, Updated Oct 28, 2019, with Exam Engine
+								
+							</td>
+							<td class="table__td _ta_center">$69.99</td>
+							<td class="table__td _ta_center">
+								<a class="table-cart__del link-reset" href="#">
+									<svg class="icon-close _opacity_60" aria-hidden="true">
+										<use xlink:href="static/img/symbol/sprite.svg#close"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__td _ta_center">
+								<div class="table__td-num">1</div>
+							</td>
+							<td>
+								<a class="table-cart__link link" href="#">CompTIA N10-007 Q&amp;A</a>
+								<div class="table__info _gray">																			
+									- CISSP	Q &amp; A<br>
+									- CISSP	Study Guide<br>
+									- CISSP	Audio Guide<br>
+								</div>
+							</td>
+							<td class="table__td _ta_center">$69.99</td>
+							<td class="table__td _ta_center">
+								<a class="table-cart__del link-reset" href="#">
+									<svg class="icon-close _opacity_60" aria-hidden="true">
+										<use xlink:href="static/img/symbol/sprite.svg#close"></use>
+									</svg>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+
+					<tfoot>
+						<tr>
+							<td colspan="4">
+								<div class="table-cart__box-info-form">
+									<div class="table-cart__info">Promotion code '111' that you entered is incorrect.</div>
+									<form class="table-cart__form" action="#">
+										<div class="table-cart__form-group-btn">
+											<input class="table-cart__form-control form-control _h_md" type="text" placeholder="Promotion Code">
+											<button class="table-cart__btn btn-reset btn _primary">Apply</button>
+										</div>
+									</form>
+								</div>								
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<div class="table-cart__box-continue-total">
+									<a class="table-cart__continue link" href="#">Continue Shopping</a>
+									<div class="table-cart__box-total">
+										<div class="table-cart__total-inf">Subtotal: $90.33</div>
+										<div class="table-cart__total-inf">Discount: $10.21</div>
+										<div class="table-cart__total">Total : $69.99</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div><!--/screen-full-->
+			<div class="cart__wrap-btn wrap-btn _center">
+				<button name="checkout" class="btn _primary _mw_xl _h_lg">Pay Now</button>
+			</div>
+		</div><!--/container-->
+	</section>
+
+</main>
+
+@@include('block/footer/_footer.html')
+@@include('block/_up.html')
+@@include('block/_scripts.html')

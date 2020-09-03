@@ -1,346 +1,344 @@
 @@include('block/_head.html')
 @@include('block/header/_header.html')
 
-<main class="main" style="display: flex; flex-direction: column;">
+<main class="main">
 	@@include('block/_breadcrumb.html')
-	<div class="user-account">
-		<div class="user-account__container container">
-			<nav class="user-account__nav">
-				<ul class="user-account__menu d-xl-none">
-					<li class="user-account__menu-item">
-						<a class="user-account__menu-link _current" href="#">
-							<svg aria-hidden="true">
-								<use xlink:href="static/img/symbol/sprite.svg#products"></use>
-							</svg>
-							<span>My Products</span>
-						</a>
-					</li>
-					<li class="user-account__menu-item">
-						<a class="user-account__menu-link" href="#">
-							<svg aria-hidden="true">
-								<use xlink:href="static/img/symbol/sprite.svg#invoice"></use>
-							</svg>
-							<span>Order/Invoice</span>
-						</a>
-					</li>
-					<li class="user-account__menu-item">
-						<a class="user-account__menu-link" href="#">
-							<svg aria-hidden="true">
-								<use xlink:href="static/img/symbol/sprite.svg#settings"></use>
-							</svg>
-							<span>Account Settings</span>
-						</a>
-					</li>
-					<li class="user-account__menu-item _pl">
-						<a class="user-account__menu-link" href="#">
-							<span>Log Out</span>
-						</a>
-					</li>
-				</ul>
+	<h1 class="visually-hidden">User account</h1>
+	<div class="user-account container">
+		<nav class="user-account__nav">
+			<ul class="user-account__menu d-xl-none">
+				<li class="user-account__menu-item">
+					<a class="user-account__menu-link _current" href="#">
+						<svg aria-hidden="true">
+							<use xlink:href="static/img/symbol/sprite.svg#products"></use>
+						</svg>
+						<span>My Products</span>
+					</a>
+				</li>
+				<li class="user-account__menu-item">
+					<a class="user-account__menu-link" href="#">
+						<svg aria-hidden="true">
+							<use xlink:href="static/img/symbol/sprite.svg#invoice"></use>
+						</svg>
+						<span>Order/Invoice</span>
+					</a>
+				</li>
+				<li class="user-account__menu-item">
+					<a class="user-account__menu-link" href="#">
+						<svg aria-hidden="true">
+							<use xlink:href="static/img/symbol/sprite.svg#settings"></use>
+						</svg>
+						<span>Account Settings</span>
+					</a>
+				</li>
+				<li class="user-account__menu-item _pl">
+					<a class="user-account__menu-link" href="#">
+						<span>Log Out</span>
+					</a>
+				</li>
+			</ul>
 
-				<div class="form-group d-none d-xl-block">
-					<label class="form-label" for="vendor">User Center</label>
-					<select class="form-control _select" name="vendor" data-js="selectric" id="vendor" onchange="window.location.href=this.options[this.selectedIndex].value">
-						<option value="1" selected>My Products</option>
-						<option value="user-invoice.html">Order/Invoice</option>
-						<option value="user-settings.html">Account Settings</option>
-						<option value="#">Log Out</option>
-					</select>
-				</div>
-			</nav>
+			<div class="form-group d-none d-xl-block">
+				<label class="form-label" for="vendor">User Center</label>
+				<select class="form-control _select" name="vendor" data-js="selectric" id="vendor" onchange="window.location.href=this.options[this.selectedIndex].value">
+					<option value="1" selected>My Products</option>
+					<option value="user-invoice.html">Order/Invoice</option>
+					<option value="user-settings.html">Account Settings</option>
+					<option value="#">Log Out</option>
+				</select>
+			</div>
+		</nav>
 
-			<div class="user-account__content">
-				<h1 class="visually-hidden">User products</h1>
-				<section class="user-account__s">
-					<h2 class="user-account__title title _fz_36">Current Products</h2>
-					<table class="table table-user-products">
-						<thead>
-							<tr>
-								<th>Product Description</th>
-								<th>Invoice #</th>
-								<th>Order Date</th>
-								<th>Expiration Date</th>
-								<th></th>
-								<th>Download / Extend</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<a class="link" href="#">1. Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
-									<div class="table-user-products__code d-md-none">
-										<span class="table-user-products__code-desc">Authorization Code #1:</span>
-										<input class="table-user-products__form-control form-control" type="text" readonly
-										value="2124-7799-9540-723D">
-									</div>
-									<div class="table-user-products__code d-md-none">
-										<span class="table-user-products__code-desc">Authorization Code #2:</span>
-										<button class="table-user-products__btn-request btn-reset btn _border-primary">Request Code</button>
-									</div>
-								</td>
-								<td>
-									<span class="table-user-invoice__desc">Invoice:</span>
-									<span><a class="link" href="#">140852</a></span>
-								</td>
-								<td>
-									<span class="table-user-invoice__desc">Order Date:</span>
-									<span>Jun 05, 20</span>
-								</td>
-								<td>
-									<span class="table-user-invoice__desc">Expiration Date:</span>
-									<span>Sep 03, 20</span>
-								</td>
-								<td class="table-user-products__td-code">
-									<div class="table-user-products__code">
-										<span class="table-user-products__code-desc">Authorization Code #1:</span>
-										<input class="table-user-products__form-control form-control" type="text" readonly
-										value="2124-7799-9540-723D">
-									</div>
-									<div class="table-user-products__code">
-										<span class="table-user-products__code-desc">Authorization Code #2:</span>
-										<button class="table-user-products__btn-request btn-reset btn _border-primary">Request Code</button>
-									</div>
-								</td>
-								<td>
-									<div class="table-user-products__box-btn-info">
-										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
-										<button class="table-user-products__btn btn-reset btn _border-primary">Extend</button>
-										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</section><!--/user-invoice-->
+		<div class="user-account__content">
+			<section class="user-account__s">
+				<h2 class="user-account__title title _fz_36">Current Products</h2>
+				<table class="table table-user-products">
+					<thead>
+						<tr>
+							<th>Product Description</th>
+							<th>Invoice #</th>
+							<th>Order Date</th>
+							<th>Expiration Date</th>
+							<th></th>
+							<th>Download / Extend</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a class="link" href="#">1. Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
+								<div class="table-user-products__code d-md-none">
+									<span class="table-user-products__code-desc">Authorization Code #1:</span>
+									<input class="table-user-products__form-control form-control" type="text" readonly
+									value="2124-7799-9540-723D">
+								</div>
+								<div class="table-user-products__code d-md-none">
+									<span class="table-user-products__code-desc">Authorization Code #2:</span>
+									<button class="table-user-products__btn-request btn-reset btn _border-primary">Request Code</button>
+								</div>
+							</td>
+							<td>
+								<span class="table-user-invoice__desc">Invoice:</span>
+								<span><a class="link" href="#">140852</a></span>
+							</td>
+							<td>
+								<span class="table-user-invoice__desc">Order Date:</span>
+								<span>Jun 05, 20</span>
+							</td>
+							<td>
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								<span>Sep 03, 20</span>
+							</td>
+							<td class="table-user-products__td-code">
+								<div class="table-user-products__code">
+									<span class="table-user-products__code-desc">Authorization Code #1:</span>
+									<input class="table-user-products__form-control form-control" type="text" readonly
+									value="2124-7799-9540-723D">
+								</div>
+								<div class="table-user-products__code">
+									<span class="table-user-products__code-desc">Authorization Code #2:</span>
+									<button class="table-user-products__btn-request btn-reset btn _border-primary">Request Code</button>
+								</div>
+							</td>
+							<td>
+								<div class="table-user-products__box-btn-info">
+									<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+									<button class="table-user-products__btn btn-reset btn _border-primary">Extend</button>
+									<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section><!--/user-invoice-->
 
-				<section class="user-account__s">
-					<h2 class="user-account__title title _fz_36">Expired Products</h2>
-					<table class="table table-user-products">
-						<thead>
-							<tr>
-								<th>Product Description</th>
-								<th>Invoice #</th>
-								<th>Order Date</th>
-								<th>Expiration Date</th>
-								<th></th>
-								<th>Download / Extend</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Invoice:</span>
-									<span><a class="link" href="#">140852</a></span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Order Date:</span>
-									<span>Jun 05, 20</span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Expiration Date:</span>
-									<span>Sep 03, 20</span>
-								</td>
-								<td>
+			<section class="user-account__s">
+				<h2 class="user-account__title title _fz_36">Expired Products</h2>
+				<table class="table table-user-products">
+					<thead>
+						<tr>
+							<th>Product Description</th>
+							<th>Invoice #</th>
+							<th>Order Date</th>
+							<th>Expiration Date</th>
+							<th></th>
+							<th>Download / Extend</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								<span><a class="link" href="#">140852</a></span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								<span>Jun 05, 20</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								<span>Sep 03, 20</span>
+							</td>
+							<td>
 
-								</td>
-								<td>
-									<div class="table-user-products__box-btn-info">
-										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
-										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Invoice:</span>
-									<span><a class="link" href="#">140852</a></span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Order Date:</span>
-									<span>Jun 05, 20</span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Expiration Date:</span>
-									<span>Sep 03, 20</span>
-								</td>
-								<td>
+							</td>
+							<td>
+								<div class="table-user-products__box-btn-info">
+									<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+									<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								<span><a class="link" href="#">140852</a></span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								<span>Jun 05, 20</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								<span>Sep 03, 20</span>
+							</td>
+							<td>
 
-								</td>
-								<td>
-									<div class="table-user-products__box-btn-info">
-										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
-										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Invoice:</span>
-									<span><a class="link" href="#">140852</a></span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Order Date:</span>
-									<span>Jun 05, 20</span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Expiration Date:</span>
-									<span>Sep 03, 20</span>
-								</td>
-								<td>
+							</td>
+							<td>
+								<div class="table-user-products__box-btn-info">
+									<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+									<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								<span><a class="link" href="#">140852</a></span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								<span>Jun 05, 20</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								<span>Sep 03, 20</span>
+							</td>
+							<td>
 
-								</td>
-								<td>
-									<div class="table-user-products__box-btn-info">
-										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
-										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Invoice:</span>
-									<span><a class="link" href="#">140852</a></span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Order Date:</span>
-									<span>Jun 05, 20</span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Expiration Date:</span>
-									<span>Sep 03, 20</span>
-								</td>
-								<td>
+							</td>
+							<td>
+								<div class="table-user-products__box-btn-info">
+									<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+									<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								<span><a class="link" href="#">140852</a></span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								<span>Jun 05, 20</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								<span>Sep 03, 20</span>
+							</td>
+							<td>
 
-								</td>
-								<td>
-									<div class="table-user-products__box-btn-info">
-										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
-										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Invoice:</span>
-									<span><a class="link" href="#">140852</a></span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Order Date:</span>
-									<span>Jun 05, 20</span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Expiration Date:</span>
-									<span>Sep 03, 20</span>
-								</td>
-								<td>
+							</td>
+							<td>
+								<div class="table-user-products__box-btn-info">
+									<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+									<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								<span><a class="link" href="#">140852</a></span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								<span>Jun 05, 20</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								<span>Sep 03, 20</span>
+							</td>
+							<td>
 
-								</td>
-								<td>
-									<div class="table-user-products__box-btn-info">
-										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
-										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Invoice:</span>
-									<span><a class="link" href="#">140852</a></span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Order Date:</span>
-									<span>Jun 05, 20</span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Expiration Date:</span>
-									<span>Sep 03, 20</span>
-								</td>
-								<td>
+							</td>
+							<td>
+								<div class="table-user-products__box-btn-info">
+									<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+									<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								<span><a class="link" href="#">140852</a></span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								<span>Jun 05, 20</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								<span>Sep 03, 20</span>
+							</td>
+							<td>
 
-								</td>
-								<td>
-									<div class="table-user-products__box-btn-info">
-										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
-										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Invoice:</span>
-									<span><a class="link" href="#">140852</a></span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Order Date:</span>
-									<span>Jun 05, 20</span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Expiration Date:</span>
-									<span>Sep 03, 20</span>
-								</td>
-								<td>
+							</td>
+							<td>
+								<div class="table-user-products__box-btn-info">
+									<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+									<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								<span><a class="link" href="#">140852</a></span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								<span>Jun 05, 20</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								<span>Sep 03, 20</span>
+							</td>
+							<td>
 
-								</td>
-								<td>
-									<div class="table-user-products__box-btn-info">
-										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
-										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Invoice:</span>
-									<span><a class="link" href="#">140852</a></span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Order Date:</span>
-									<span>Jun 05, 20</span>
-								</td>
-								<td class="table__td">
-									<span class="table-user-invoice__desc">Expiration Date:</span>
-									<span>Sep 03, 20</span>
-								</td>
-								<td>
+							</td>
+							<td>
+								<div class="table-user-products__box-btn-info">
+									<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+									<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a class="link" href="#">Fortinet NSE7_EFW-6.2 Questions &amp; Answers</a>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Invoice:</span>
+								<span><a class="link" href="#">140852</a></span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Order Date:</span>
+								<span>Jun 05, 20</span>
+							</td>
+							<td class="table__td">
+								<span class="table-user-invoice__desc">Expiration Date:</span>
+								<span>Sep 03, 20</span>
+							</td>
+							<td>
 
-								</td>
-								<td>
-									<div class="table-user-products__box-btn-info">
-										<button class="table-user-products__btn btn-reset btn _primary">Download</button>
-										<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</section><!--/user-invoice-->
-			</div><!--/user-account__content-->
-		</div><!--/container-->
-	</div>
+							</td>
+							<td>
+								<div class="table-user-products__box-btn-info">
+									<button class="table-user-products__btn btn-reset btn _primary">Download</button>
+									<div class="table-user-products__info table__info">Renew 1Y0-A19 exam with 30% Discount </div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section><!--/user-invoice-->
+		</div><!--/user-account__content-->
+	</div><!--/user-account-->
 </main>
 
 @@include('block/footer/_footer.html')

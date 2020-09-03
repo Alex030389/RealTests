@@ -21,8 +21,8 @@ const lazyLoadInstance = new LazyLoad({
 @@include('block/_scroll-top.js')
 @@include('block/_copy-discount.js')
 @@include('block/_show-cert-exam-item.js')
-@@include('block/_tab-local-storage.js')
-
+@@include('block/_register-tab-ls.js')
+@@include('block/_settings-tab-ls.js')
 
 $('[data-btn="testimonial-load-more"]').on('click', function() {
 	$('.testimonials__item:hidden').fadeIn(500);
@@ -32,8 +32,6 @@ $('[data-btn="testimonial-load-more"]').on('click', function() {
 $('[data-js="selectric"]').selectric({
 	nativeOnMobile: false,
 });
-
-
 
 
 // ///////////////////////////////////// ather

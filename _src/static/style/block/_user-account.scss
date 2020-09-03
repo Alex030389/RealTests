@@ -1,14 +1,10 @@
 .user-account {
-	flex-grow: 1;
+	display: flex;
+	min-height: 550px;
 
-	&__container {
-		display: flex;
-		min-height: 550px;
-
-		@media (max-width: $xl) {
-			flex-direction: column;
-			min-height: auto;
-		}
+	@media (max-width: $xl) {
+		flex-direction: column;
+		min-height: auto;
 	}
 
 	// ////////////////////////////////////////////// nav
@@ -20,8 +16,8 @@
 		border-right: 1px solid #cfd9e0;
 
 		@media (max-width: 1500px) {
-			padding: 72px 25px 72px 0;
 			width: 250px;
+			padding: 72px 25px 72px 0;
 		}
 
 		@media (max-width: $xl) {
@@ -111,8 +107,8 @@
 
 	&__title {
 		margin-bottom: 16px;
-    @media (max-width: $sm) {
-      margin-bottom: 16px;
-    }
-  }
+		@media (max-width: $sm) {
+			margin-bottom: 16px;
+		}
+	}
 }
