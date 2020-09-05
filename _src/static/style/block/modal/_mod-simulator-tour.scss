@@ -4,10 +4,12 @@
 	align-items: center;
 
 	&__img {
+		flex-shrink: 0;
 		margin-bottom: 15px;
 	}
 
 	&__box-text {
+		width: 100%;
 		padding-bottom: 15px;
 	}
 

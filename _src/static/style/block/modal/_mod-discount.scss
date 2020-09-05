@@ -52,6 +52,7 @@
 	}
 
 	&__content {
+		width: 100%;
 		padding-top: 8px;
 
 		@media (max-width: $sm) {
@@ -62,6 +63,7 @@
 	}
 
 	&__p {
+		width: 100%;
 		margin-bottom: 23px;
 
 		font-size: 18px;
@@ -84,7 +86,6 @@
 		max-width: 355px;
 		@media (max-width: $sm) {
 			width: 100%;
-			// max-width: 400px;
 		}
 	}
 

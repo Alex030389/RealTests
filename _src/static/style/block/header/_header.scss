@@ -1,7 +1,9 @@
 .header {
+	position: relative;
+
 	background-color: #1d262d;
 
-	.container {
+	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;

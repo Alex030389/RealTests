@@ -1,5 +1,5 @@
 <header class="header">
-	<div class="container _large">
+	<div class="header__container container _large">
 		<div class="header__box-m-btn">
 			<button class="header__m-btn btn-reset" data-m-btn="open" aria-label="open mobile menu">
 				<svg class="header__icon" aria-hidden="true">
@@ -118,19 +118,9 @@
 				<a class="user-menu__btn _border link-reset" data-reg="sign-up" href="register.html">Sign up</a>
 			</li>
 		</ul>
-		<div class="header__search main-search" data-js="main-search">
-			<div class="main-search__inner">
-				<form class="main-search__form" action="#">
-					<button class="main-search__btn-back btn-reset" data-btn="search-close" type="button" aria-label="button close search">
-						<svg aria-hidden="true">
-							<use xlink:href="static/img/symbol/sprite.svg#arrow-large"></use>
-						</svg>
-					</button>
-					<input class="main-search__form-control form-control _h_sm" type="text" data-js="main-search-input">
-					<button class="main-search__btn-search btn-reset btn">Search</button>
-				</form>
-			</div>
-		</div>
+		
+
+		
 		<div class="header__box-m-btn">
 			<a class="header__m-btn" href="#" aria-label="cart link">
 				<svg class="header__icon" aria-hidden="true">
@@ -144,6 +134,20 @@
 			</a>
 		</div><!--/header__box-m-btn-->
 	</div><!--/container-->
+
+	<div class="header__search main-search" data-js="main-search">
+		<div class="main-search__inner">
+			<form class="main-search__form" action="#">
+				<button class="main-search__btn-back btn-reset" data-btn="search-close" type="button" aria-label="button close search">
+					<svg aria-hidden="true">
+						<use xlink:href="static/img/symbol/sprite.svg#arrow-large"></use>
+					</svg>
+				</button>
+				<input class="main-search__form-control form-control _h_sm" type="text" data-js="main-search-input">
+				<button class="main-search__btn-search btn-reset btn">Search</button>
+			</form>
+		</div>
+	</div>
 
 	<!-- mobile nav -->
 	<nav class="header__main-m-nav main-m-nav" data-nav="main-m-nav">
