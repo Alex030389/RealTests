@@ -1,0 +1,43 @@
+<nav class="user-account__nav">
+	<ul class="user-account__menu d-xl-none">
+		<li class="user-account__menu-item">
+			<a class="user-account__menu-link _current" href="#">
+				<svg aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#products"></use>
+				</svg>
+				<span>My Products</span>
+			</a>
+		</li>
+		<li class="user-account__menu-item">
+			<a class="user-account__menu-link" href="#">
+				<svg aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#invoice"></use>
+				</svg>
+				<span>Order/Invoice</span>
+			</a>
+		</li>
+		<li class="user-account__menu-item">
+			<a class="user-account__menu-link" href="#">
+				<svg aria-hidden="true">
+					<use xlink:href="static/img/symbol/sprite.svg#settings"></use>
+				</svg>
+				<span>Account Settings</span>
+			</a>
+		</li>
+		<li class="user-account__menu-item _pl">
+			<a class="user-account__menu-link" href="#">
+				<span>Log Out</span>
+			</a>
+		</li>
+	</ul>
+
+	<div class="form-group d-none d-xl-block">
+		<label class="form-label" for="vendor">User Center</label>
+		<select class="form-control _select" name="vendor" data-js="selectric" id="vendor" onchange="window.location.href=this.options[this.selectedIndex].value">
+			<option value="1" selected>My Products</option>
+			<option value="user-invoice.html">Order/Invoice</option>
+			<option value="user-settings.html">Account Settings</option>
+			<option value="#">Log Out</option>
+		</select>
+	</div>
+</nav>

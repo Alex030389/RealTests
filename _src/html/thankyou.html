@@ -1,0 +1,55 @@
+@@include('block/_head.html')
+@@include('block/header/_header.html')
+
+<main class="main">
+	@@include('block/_breadcrumb.html')
+	<!-- ///////////////////////////////////////////// thankyou -->
+	<section class="cart _pb_lg">
+		<div class="container">
+			<h1 class="cart__title title _fz_36">Thank You, Purchase Complete</h1>
+			<p class="cart__subtitle subtitle">Your Purchase was successful.</p>
+			<div class="screen-full _sm">
+				<table class="table table-cart">
+					<thead>
+						<tr>
+							<th class="table__td _ta_center">Qty</th>
+							<th class="">Item Description</th>
+							<th class="table__td _ta_center">Price</th>
+							<th class=""></th>
+						</tr>
+					</thead>
+
+					<tbody>
+						@@for (var i = 0; i < 2; i++) {
+							<tr class="table__tr _not-border-top">
+								<td class="table__td _ta_center">
+									<div class="table__td-num">1</div>
+								</td>
+								<td>
+									<a class="table-cart__link link" href="#">CompTIA N10-007 Q&amp;A</a>								
+								</td>
+								<td class="table__td _ta_center">$69.99</td>
+							</tr>
+						}
+					</tbody>
+
+					<tfoot>
+						<tr>
+							<td colspan="4">
+								<div class="table-cart__box-continue-total">
+									<div class="table-cart__box-total" style="margin-left: auto">
+										<div class="table-cart__total">Total : $69.99</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div><!--/screen-full-->
+		</div><!--/container-->
+	</section>
+</main>
+
+@@include('block/footer/_footer.html')
+@@include('block/_up.html')
+@@include('block/_scripts.html')

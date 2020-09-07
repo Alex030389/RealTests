@@ -41,6 +41,14 @@
 		letter-spacing: .02em;
 	}
 
+	&__tr {
+		&._not-border-top {
+			&:first-child {
+				border-top: none;
+			}
+		}
+	}
+
 	&__td {
 		&._ta_center {
 			text-align: center;

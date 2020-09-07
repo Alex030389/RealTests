@@ -35,5 +35,16 @@
 				width: $col-1;
 			}
 		}
+
+		&._3 {
+			width: $col-3;
+			@media (max-width: $lg) {
+				width: $col-2;
+			}
+
+			@media (max-width: $md) {
+				width: $col-1;
+			}
+		}
 	}
 }

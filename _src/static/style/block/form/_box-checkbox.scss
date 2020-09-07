@@ -24,6 +24,10 @@
 				height: 24px;
 			}
 		}
+
+		&._circl::after {
+			border-radius: 50%;
+		}
 	}
 
 	&__form-control:checked + &__form-label::after {
