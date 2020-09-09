@@ -11,3 +11,7 @@
 [0827/160158.253:ERROR:process_info.cc(359)] UncheckedAllocate
 [0831/160726.812:ERROR:process_info.cc(359)] UncheckedAllocate
 [0831/160749.589:ERROR:process_info.cc(359)] UncheckedAllocate
+[0908/092540.272:ERROR:process_info.cc(359)] UncheckedAllocate
+[0908/092541.183:ERROR:process_info.cc(359)] UncheckedAllocate
+[0908/092541.241:ERROR:process_info.cc(359)] UncheckedAllocate
+[0908/144543.153:ERROR:process_info.cc(359)] UncheckedAllocate

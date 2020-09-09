@@ -2,7 +2,6 @@
 @import "base/var";
 @import "base/global";
 @import "base/util";
-@import "animation/rotate";
 
 // ///////////////////////////////////////// block
 @import "block/container";
@@ -109,7 +108,7 @@
 @import "base/display";
 
 
-// ////////// anchor for debug
+// ///////////////////////////////////////// anchor for debug
 .anchor {
 	color: red;
 
@@ -120,7 +119,7 @@
 	}
 }
 
-// validator.js
+// ///////////////////////////////////////// ather
 .error_message {
 	color: red;
 }
