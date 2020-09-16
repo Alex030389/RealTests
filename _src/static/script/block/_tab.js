@@ -11,6 +11,15 @@ function tdTabs(btn, content) {
 		tabBtns.removeClass('_active');
 		$(this).addClass('_active');
 		tabContens.hide();
-		tabContens.eq($(this).attr('data-tab-btn')).fadeIn();
+		tabContens.eq($(this).data('tab-btn')).fadeIn();
 	})
 }
+
+$('[data-agitation-btn]').on('click', function() {
+	let num = $(this).data('agitation-btn');
+	if(num === 1) {
+		$('[data-tab-btn="1"]')[0].click();
+	} else if (num === 2) {
+		$('[data-tab-btn="2"]')[0].click();
+	}
+})

@@ -1,8 +1,11 @@
+# /dist/
+/.DS_Store
 /node_modules/
 /.git/
-# /dist/
 /.idea/
 /**/_backstage
 /**/package-lock.json
 /**/Thumbs.db
 /**/*.DS_Store
+/debug.log
+/npm-debug.*
