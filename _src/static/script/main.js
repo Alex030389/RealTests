@@ -44,8 +44,6 @@ $('.mod-need-help__list').on('click', '.mod-need-help__btn', function() {
 	$(this).next().slideToggle();
 });
 
-$('.input-test').wrap('<span class="input-shadow"></span>');
-console.log($('.wrap-input-test'));
 
 // ///////////////////////////////////////////////////// stick footer
 (function () {
